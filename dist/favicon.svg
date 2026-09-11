@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
-  <rect width="100" height="100" rx="20" fill="#0B212D"/>
-  <rect x="4" y="4" width="92" height="92" rx="16" stroke="#C8963E" stroke-width="2" stroke-opacity="0.6"/>
-  <!-- Stylized A in Gold -->
-  <path d="M36 72L46 28H54L64 72H54.5L52.5 62H47.5L45.5 72H36ZM48.5 54H51.5L50 43L48.5 54Z" fill="#C8963E"/>
-  <!-- Accent Line in Radiant Gold -->
-  <path d="M25 78H75" stroke="#DFB76C" stroke-width="3" stroke-linecap="round"/>
-</svg>
