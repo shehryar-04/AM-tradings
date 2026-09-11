@@ -8,36 +8,43 @@ export default {
     extend: {
       colors: {
         petrol: {
-          950: '#051117',
-          900: '#07151D',
-          800: '#0B212D',
-          700: '#103244',
-          600: '#18475E',
-          500: '#1B5C77',
-          400: '#267A9D',
-          300: '#4098BD',
-          100: '#D5E6EE',
-          50: '#F0F6F9',
+          950: '#051D24', // Deepest Petrol
+          900: '#094B5B', // Official Primary Petrol Teal (from Letterhead & Card)
+          850: '#0C3151', // Official Deep Imperial Navy (from Letterhead & Card)
+          800: '#103E4A', // Rich Petrol
+          700: '#145363',
+          600: '#1A6B7F',
+          500: '#22869E',
+          400: '#38A3BD',
+          300: '#64BED4',
+          200: '#A8DBE8',
+          100: '#D2EEF5',
+          50: '#E6F6FD',  // Official Soft Ice Accent (from Business Card)
         },
         gold: {
-          900: '#644714',
-          800: '#835E1C',
-          700: '#9B732B',
-          600: '#B58534',
-          500: '#C8963E', // Base Gold Accent
-          400: '#DFB76C', // Radiant Gold
-          300: '#ECCB8E',
-          200: '#F4E0BC',
-          100: '#F9F1E2',
-          50: '#FDFBFA',
+          900: '#5A421C',
+          800: '#7E5E28',
+          700: '#9F7635',
+          600: '#B5883E',
+          500: '#C6984C', // Official Executive Gold (from Letterhead & Card)
+          400: '#D6AE68',
+          300: '#E4C78D',
+          200: '#EEDDB8',
+          100: '#F7EFE0',
+          50: '#FDFBF7',
         },
         ivory: {
-          50: '#FDFCF9',
-          100: '#FAF8F5', // Primary Base Neutral
-          200: '#F3EFEA', // Secondary Section Neutral
-          300: '#EAE4D9',
-          400: '#DDD4C3',
-          500: '#C9BCAB',
+          50: '#FFFFFF',
+          100: '#F8FAFB', // Letterhead Canvas White
+          200: '#F1F5F7', // Crisp Cool Light Neutral
+          300: '#E2E9ED',
+          400: '#CBD6DC',
+          500: '#98A9B2',
+        },
+        navy: {
+          DEFAULT: '#0C3151',
+          dark: '#072036',
+          light: '#144670',
         },
         whatsapp: {
           DEFAULT: '#25D366',

@@ -4,9 +4,11 @@
 
 @layer base {
   :root {
-    --color-bg-base: #FAF8F5;
-    --color-petrol-dark: #07151D;
-    --color-gold-base: #C8963E;
+    --color-bg-base: #F8FAFB;
+    --color-petrol-teal: #094B5B;
+    --color-petrol-navy: #0C3151;
+    --color-gold-base: #C6984C;
+    --color-text-main: #202934;
   }
 
   html {
@@ -16,13 +18,13 @@
 
   body {
     background-color: var(--color-bg-base);
-    color: #121A21;
+    color: var(--color-text-main);
     overflow-x: hidden;
   }
 
   /* Accessible Focus States */
   :focus-visible {
-    outline: 2px solid #C8963E;
+    outline: 2px solid #C6984C;
     outline-offset: 3px;
   }
 
@@ -33,17 +35,17 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #0B212D;
+    background: #0C3151;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #18475E;
+    background: #1A6B7F;
     border-radius: 4px;
-    border: 1px solid rgba(200, 150, 62, 0.3);
+    border: 1px solid rgba(198, 152, 76, 0.35);
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #C8963E;
+    background: #C6984C;
   }
 }
 
@@ -53,27 +55,27 @@
   }
   
   .glass-dark {
-    background: rgba(11, 33, 45, 0.85);
+    background: rgba(12, 49, 81, 0.90);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
   }
 
   .glass-light {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(11, 33, 45, 0.08);
+    border: 1px solid rgba(12, 49, 81, 0.08);
   }
 
   .gold-gradient-text {
-    background: linear-gradient(135deg, #F4E0BC 0%, #DFB76C 40%, #C8963E 80%, #9B732B 100%);
+    background: linear-gradient(135deg, #F7EFE0 0%, #D6AE68 40%, #C6984C 80%, #7E5E28 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .gold-border-glow {
-    box-shadow: 0 0 25px -5px rgba(200, 150, 62, 0.25);
+    box-shadow: 0 0 25px -5px rgba(198, 152, 76, 0.30);
   }
 
   .img-contain-frame {
