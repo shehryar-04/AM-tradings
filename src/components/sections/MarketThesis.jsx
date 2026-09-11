@@ -26,21 +26,21 @@ export function MarketThesis() {
         <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {marketData.stats.map((stat, idx) => (
             <StaggerItem key={stat.label}>
-              <div className="bg-petrol-800/80 hover:bg-petrol-800 border border-white/10 hover:border-gold-500/50 p-6 rounded-sm transition-all duration-300 flex flex-col justify-between h-full shadow-lg group">
+              <div className="bg-petrol-800/90 hover:bg-petrol-800 border border-white/10 hover:border-gold-500/60 p-6 rounded transition-all duration-300 flex flex-col justify-between h-full shadow-card group">
                 <div>
                   <div className="flex items-baseline justify-between mb-3">
-                    <span className="font-serif text-3xl sm:text-4xl font-bold text-gold-400 group-hover:text-gold-300 transition-colors">
+                    <span className="font-display text-4xl sm:text-5xl font-bold text-gold-500 group-hover:text-gold-400 transition-colors tracking-tight">
                       {stat.value}
                     </span>
-                    <span className="text-[11px] font-mono font-semibold uppercase text-slate-400 bg-white/5 px-2 py-0.5 rounded-xs">
+                    <span className="text-[11px] font-display font-semibold uppercase tracking-wider text-slate-300 bg-white/10 px-2 py-0.5 rounded">
                       {stat.unit}
                     </span>
                   </div>
-                  <h4 className="text-base font-semibold text-white mb-2">
+                  <h4 className="text-base font-display font-semibold text-white mb-2">
                     {stat.label}
                   </h4>
                 </div>
-                <p className="text-xs text-slate-400 leading-relaxed pt-3 border-t border-white/5">
+                <p className="text-xs font-sans text-slate-300 leading-relaxed pt-3 border-t border-white/10">
                   {stat.detail}
                 </p>
               </div>
@@ -54,11 +54,11 @@ export function MarketThesis() {
           {/* Left: Thesis Points & Callout */}
           <div className="lg:col-span-6 flex flex-col">
             <Reveal direction="up" delay={0.1}>
-              <div className="bg-white/5 border-l-4 border-gold-500 p-6 rounded-r-sm mb-8">
-                <blockquote className="font-serif text-xl sm:text-2xl italic text-white leading-relaxed mb-3">
+              <div className="bg-white/5 border-l-4 border-gold-500 p-6 rounded-r mb-8">
+                <blockquote className="font-sans text-xl sm:text-2xl font-semibold text-white leading-relaxed mb-3">
                   "{company.marketThesis}"
                 </blockquote>
-                <p className="text-xs font-mono uppercase tracking-widest text-gold-400 font-semibold">
+                <p className="text-xs font-display uppercase tracking-widest text-gold-400 font-semibold">
                   — Pakistan Industrial Dairy Opportunity Thesis
                 </p>
               </div>

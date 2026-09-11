@@ -51,32 +51,32 @@ export function BusinessAreas() {
               <StaggerItem key={cap.id} className="h-full">
                 <div
                   onClick={() => setSelectedCapability(cap)}
-                  className="group bg-white p-7 rounded-sm border border-petrol-900/10 hover:border-gold-500/80 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full cursor-pointer relative overflow-hidden"
+                  className="group bg-white p-7 rounded border border-petrol-900/10 hover:border-gold-500/80 hover:shadow-card-hover shadow-card transition-all duration-300 flex flex-col justify-between h-full cursor-pointer relative overflow-hidden"
                 >
                   {/* Top Accent Line on Hover */}
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gold-400 to-gold-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gold-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                   <div>
                     <div className="flex items-center justify-between mb-5">
-                      <div className="w-12 h-12 rounded-sm bg-petrol-900 text-gold-400 flex items-center justify-center group-hover:scale-105 group-hover:bg-gold-500 group-hover:text-white transition-all duration-300 shadow-sm">
+                      <div className="w-12 h-12 rounded bg-petrol-900 text-gold-500 flex items-center justify-center group-hover:scale-105 group-hover:bg-gold-500 group-hover:text-petrol-900 transition-all duration-300 shadow-sm">
                         <Icon className="w-6 h-6" />
                       </div>
-                      <span className="font-mono text-xs font-bold text-slate-400 group-hover:text-gold-700 transition-colors">
+                      <span className="font-display text-xs font-bold text-slate-400 group-hover:text-gold-700 transition-colors uppercase tracking-wider">
                         PILLAR {cap.number}
                       </span>
                     </div>
 
-                    <h3 className="font-serif text-xl font-bold text-petrol-900 mb-2.5 group-hover:text-gold-800 transition-colors">
+                    <h3 className="font-display text-xl font-bold text-petrol-900 mb-2.5 group-hover:text-gold-700 transition-colors">
                       {cap.title}
                     </h3>
 
-                    <p className="text-sm text-slate-600 leading-relaxed mb-6">
+                    <p className="font-sans text-sm text-slate-600 leading-relaxed mb-6">
                       {cap.summary}
                     </p>
                   </div>
 
                   <div>
-                    <div className="pt-4 border-t border-petrol-900/5 flex items-center justify-between text-xs font-semibold text-petrol-900 group-hover:text-gold-700">
+                    <div className="pt-4 border-t border-petrol-900/5 flex items-center justify-between text-xs font-display font-semibold uppercase tracking-wider text-petrol-900 group-hover:text-gold-700">
                       <span>View Deliverables &amp; Scope</span>
                       <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                     </div>
@@ -88,15 +88,15 @@ export function BusinessAreas() {
 
           {/* 8th Card: Visual Infographic Feature */}
           <StaggerItem className="h-full">
-            <div className="bg-petrol-900 text-white p-7 rounded-sm border border-gold-500/40 flex flex-col justify-between h-full shadow-lg relative overflow-hidden group">
+            <div className="bg-petrol-900 text-white p-7 rounded border border-gold-500/40 flex flex-col justify-between h-full shadow-card relative overflow-hidden group">
               <div>
-                <span className="font-mono text-xs uppercase tracking-widest text-gold-400 block mb-2 font-bold">
+                <span className="font-display text-xs uppercase tracking-widest text-gold-400 block mb-2 font-bold">
                   Client Artifact
                 </span>
-                <h3 className="font-serif text-xl font-bold text-white mb-3">
+                <h3 className="font-display text-xl font-bold text-white mb-3">
                   Comprehensive 7 Pillars Framework
                 </h3>
-                <p className="text-xs text-slate-300 leading-relaxed mb-4">
+                <p className="font-sans text-xs text-slate-300 leading-relaxed mb-4">
                   Official operational scope covering Turnkey Consulting, Sourcing, Commissioning, Formulation, Laboratory QA, Spares, and CAPEX Modeling.
                 </p>
               </div>

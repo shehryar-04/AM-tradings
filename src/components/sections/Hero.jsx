@@ -21,17 +21,17 @@ export function Hero() {
             
             {/* Eyebrow Pill */}
             <Reveal direction="down" delay={0.1}>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-gold-500/30 text-petrol-900 text-xs font-semibold uppercase tracking-wider mb-6 shadow-sm">
-                <Sparkles className="w-3.5 h-3.5 text-gold-600" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded bg-white/95 border border-gold-500/40 text-petrol-900 text-xs font-display font-semibold uppercase tracking-[0.16em] mb-6 shadow-card">
+                <Sparkles className="w-3.5 h-3.5 text-gold-500" />
                 <span>Turnkey Dairy &amp; Industrial Advisory</span>
               </div>
             </Reveal>
 
             {/* Main Headline */}
             <Reveal direction="up" delay={0.2}>
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-extrabold text-petrol-950 leading-[1.12] tracking-tight mb-6">
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-petrol-900 leading-[1.1] tracking-tight mb-6">
                 Consultancy first. <br />
-                <span className="font-serif italic font-normal text-gold-700">
+                <span className="text-gold-500 font-bold">
                   Everything else follows.
                 </span>
               </h1>
@@ -39,11 +39,11 @@ export function Hero() {
 
             {/* Core Principle Callout */}
             <Reveal direction="up" delay={0.3}>
-              <div className="border-l-2 border-gold-500 pl-4 py-1 mb-6 bg-gold-50/40 rounded-r-sm">
-                <p className="font-serif text-lg sm:text-xl italic text-petrol-900 font-medium leading-snug">
+              <div className="border-l-4 border-gold-500 pl-4 py-1.5 mb-6 bg-gold-50/60 rounded-r">
+                <p className="font-sans text-lg sm:text-xl text-petrol-900 font-semibold leading-snug">
                   "{company.corePrinciple}"
                 </p>
-                <p className="text-xs font-mono font-semibold uppercase tracking-widest text-gold-800 mt-1">
+                <p className="text-xs font-display font-semibold uppercase tracking-widest text-gold-700 mt-1">
                   — Independent Industrial Sourcing Standard
                 </p>
               </div>
@@ -51,7 +51,7 @@ export function Hero() {
 
             {/* Narrative Description */}
             <Reveal direction="up" delay={0.35}>
-              <p className="text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl mb-8">
+              <p className="font-sans text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl mb-8">
                 We empower investors, dairy entrepreneurs, and corporate food processors to execute high-yield Greenfield plants, source verified international machinery, and engineer standard-setting dairy recipes without vendor bias.
               </p>
             </Reveal>
@@ -83,26 +83,26 @@ export function Hero() {
             <Reveal direction="up" delay={0.45}>
               <div className="grid grid-cols-3 gap-4 pt-6 border-t border-petrol-900/10">
                 <div>
-                  <span className="font-serif text-2xl sm:text-3xl font-bold text-petrol-900 block leading-tight">
+                  <span className="font-display text-3xl sm:text-4xl font-bold text-petrol-900 block leading-tight tracking-tight">
                     74.7M
                   </span>
-                  <span className="text-[11px] sm:text-xs text-slate-600 font-mono uppercase tracking-wider block mt-0.5">
+                  <span className="text-[11px] sm:text-xs text-slate-600 font-display font-semibold uppercase tracking-wider block mt-0.5">
                     Tonnes Milk Base
                   </span>
                 </div>
                 <div>
-                  <span className="font-serif text-2xl sm:text-3xl font-bold text-gold-700 block leading-tight">
+                  <span className="font-display text-3xl sm:text-4xl font-bold text-gold-500 block leading-tight tracking-tight">
                     100%
                   </span>
-                  <span className="text-[11px] sm:text-xs text-slate-600 font-mono uppercase tracking-wider block mt-0.5">
+                  <span className="text-[11px] sm:text-xs text-slate-600 font-display font-semibold uppercase tracking-wider block mt-0.5">
                     Vendor Neutral
                   </span>
                 </div>
                 <div>
-                  <span className="font-serif text-2xl sm:text-3xl font-bold text-petrol-900 block leading-tight">
+                  <span className="font-display text-3xl sm:text-4xl font-bold text-petrol-900 block leading-tight tracking-tight">
                     8 Stages
                   </span>
-                  <span className="text-[11px] sm:text-xs text-slate-600 font-mono uppercase tracking-wider block mt-0.5">
+                  <span className="text-[11px] sm:text-xs text-slate-600 font-display font-semibold uppercase tracking-wider block mt-0.5">
                     Greenfield Framework
                   </span>
                 </div>

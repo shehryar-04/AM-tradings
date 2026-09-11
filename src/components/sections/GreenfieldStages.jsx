@@ -66,7 +66,7 @@ export function GreenfieldStages() {
 
         {/* 8-Stage Horizontal Interactive Tabs */}
         <div className="mb-10 overflow-x-auto pb-4 scrollbar-thin">
-          <div className="flex items-center gap-2 min-w-max">
+          <div className="flex items-center gap-2.5 min-w-max">
             {stages.map((stage, idx) => {
               const isActive = idx === activeStageIndex;
               return (
@@ -75,21 +75,33 @@ export function GreenfieldStages() {
                   type="button"
                   onClick={() => setActiveStageIndex(idx)}
                   className={clsx(
-                    'flex flex-col items-start p-3.5 rounded-sm border transition-all duration-300 text-left min-w-[135px]',
+                    'flex flex-col items-start p-3.5 rounded border transition-all duration-300 text-left min-w-[140px]',
                     isActive
-                      ? 'bg-gold-500 text-petrol-950 border-gold-400 font-bold shadow-lg shadow-gold-500/20'
-                      : 'bg-petrol-800/80 text-slate-300 border-white/10 hover:border-gold-400/50 hover:bg-petrol-800'
+                      ? 'bg-gold-500 text-petrol-950 border-gold-400 font-bold shadow-card shadow-gold-500/20'
+                      : 'bg-petrol-800/90 text-slate-300 border-white/10 hover:border-gold-500/50 hover:bg-petrol-800'
                   )}
                 >
-                  <span
-                    className={clsx(
-                      'text-[10px] font-mono tracking-widest uppercase mb-1',
-                      isActive ? 'text-petrol-950 font-bold' : 'text-gold-400'
-                    )}
-                  >
-                    {stage.phase}
-                  </span>
-                  <span className="text-xs font-serif leading-tight truncate w-full">
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <span
+                      className={clsx(
+                        'w-5 h-5 rounded-full text-[11px] font-display font-bold flex items-center justify-center',
+                        isActive
+                          ? 'bg-petrol-900 text-gold-400'
+                          : 'bg-white/10 text-gold-400'
+                      )}
+                    >
+                      {idx + 1}
+                    </span>
+                    <span
+                      className={clsx(
+                        'text-[10px] font-display font-semibold tracking-widest uppercase',
+                        isActive ? 'text-petrol-950 font-bold' : 'text-gold-400'
+                      )}
+                    >
+                      {stage.phase}
+                    </span>
+                  </div>
+                  <span className="text-xs font-display font-semibold leading-tight truncate w-full">
                     {stage.title}
                   </span>
                 </button>
@@ -99,7 +111,7 @@ export function GreenfieldStages() {
         </div>
 
         {/* Active Stage Detail Panel */}
-        <div className="bg-petrol-950 rounded-sm border border-gold-500/30 p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+        <div className="bg-petrol-950 rounded-lg border border-gold-500/30 p-6 sm:p-10 shadow-modal relative overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentStage.step}
@@ -112,22 +124,22 @@ export function GreenfieldStages() {
               {/* Left Stage Activities & Scope */}
               <div className="lg:col-span-7 flex flex-col">
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="text-xs font-mono font-bold uppercase tracking-widest text-gold-400 bg-white/5 px-2.5 py-1 rounded-xs border border-white/10">
+                  <span className="text-xs font-display font-bold uppercase tracking-widest text-gold-400 bg-white/5 px-2.5 py-1 rounded border border-white/10">
                     {currentStage.phase} OF 08
                   </span>
-                  <span className="text-xs text-slate-400 font-mono">
+                  <span className="text-xs text-slate-400 font-display">
                     Greenfield Milestone
                   </span>
                 </div>
 
-                <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">
+                <h3 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">
                   {currentStage.title}
                 </h3>
-                <p className="text-gold-300 text-sm font-serif italic mb-5">
+                <p className="text-gold-400 text-sm font-sans italic mb-5">
                   {currentStage.subtitle}
                 </p>
 
-                <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                <p className="text-slate-200 text-sm sm:text-base font-sans leading-relaxed mb-6">
                   {currentStage.summary}
                 </p>
 
