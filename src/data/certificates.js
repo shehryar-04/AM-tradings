@@ -1,0 +1,103 @@
+/**
+ * AM TRADINGS & CONSULTANTS — REGISTRATION & AFFILIATIONS DATA
+ * Official legal credentials, chambers of commerce, tax authority registrations, and international MOUs.
+ */
+
+export const certificates = [
+  {
+    id: 'company-registration',
+    title: 'Company Registration Certificate',
+    authority: 'Securities & Exchange Commission of Pakistan (SECP)',
+    type: 'Legal Incorporation',
+    identifier: 'Incorporated Entity',
+    description: 'Official corporate registration certifying AM Tradings & Consultants as a legally established private limited enterprise authorized for industrial consulting, machinery procurement, and engineering services.',
+    verified: true,
+    previewImage: '/images/plant-consulting-dark.jpeg',
+    badge: 'Statutory Incorporation',
+    details: [
+      'Corporate Entity: AM Tradings & Consultants (Pvt) Ltd.',
+      'Authorized Business Scope: Dairy Processing Consulting & Machinery Trading',
+      'Jurisdiction: Pakistan & International Cross-Border Advisory',
+    ],
+  },
+  {
+    id: 'chamber-registration',
+    title: 'Chamber of Commerce Registration',
+    authority: 'The Lahore Chamber of Commerce & Industry (LCCI)',
+    type: 'Trade Body Affiliation',
+    identifier: 'Active Corporate Member',
+    description: 'Official institutional membership with the Lahore Chamber of Commerce & Industry, recognizing AM Tradings within the corporate industrial machinery and international trade community.',
+    verified: true,
+    previewImage: '/images/plant-consulting-light.jpeg',
+    badge: 'LCCI Registered',
+    details: [
+      'Trade Chamber: Lahore Chamber of Commerce & Industry (LCCI)',
+      'Classification: Industrial Machinery Importers & Technical Consultants',
+      'Global Commercial Representation & Trade Endorsement',
+    ],
+  },
+  {
+    id: 'ntn-registration',
+    title: 'National Tax Number (NTN) Certificate',
+    authority: 'Federal Board of Revenue (FBR), Government of Pakistan',
+    type: 'Tax Authority Compliance',
+    identifier: 'Registered Corporate Taxpayer',
+    description: 'Federal tax registration certifying active corporate compliance, documented commercial operations, and transparent financial standing under the Federal Board of Revenue.',
+    verified: true,
+    previewImage: '/images/market-gap-stats.jpeg',
+    badge: 'FBR Tax Compliant',
+    details: [
+      'Issuing Body: Federal Board of Revenue (FBR)',
+      'Tax Status: Active Taxpayer List (ATL)',
+      'Transparent Audited Financials for Institutional Tenders',
+    ],
+  },
+  {
+    id: 'sales-tax-registration',
+    title: 'Sales Tax Registration (STRN)',
+    authority: 'Federal Board of Revenue & Provincial Revenue Authorities',
+    type: 'Sales Tax Compliance',
+    identifier: 'Active Sales Tax Entity',
+    description: 'Registered sales tax compliance enabling domestic and international machinery transactions, invoicing, and duty-compliant industrial procurement.',
+    verified: true,
+    previewImage: '/images/seven-capabilities.jpeg',
+    badge: 'STRN Certified',
+    details: [
+      'Registered for General Sales Tax on Commercial Procurement',
+      'Full Compliance for Duty Exemption & Plant Machinery Imports',
+      'Standardized Commercial Invoicing & Verification',
+    ],
+  },
+  {
+    id: 'mou-stk',
+    title: 'Memorandum of Understanding (MOU) — STK Machinery',
+    authority: 'STK Machinery International Co.',
+    type: 'Exclusive / Authorized Technology Representation',
+    identifier: 'Strategic Machinery Partner',
+    description: 'Bilateral technology and equipment distribution MOU empowering AM Tradings to represent, source, and commission high-grade STK dairy processing lines, UHT plants, and cheese equipment.',
+    verified: true,
+    previewImage: '/images/machinery/uht-sterilizer-line.jpg',
+    badge: 'Strategic OEM Alliance',
+    details: [
+      'Direct Factory Access to STK Sanitary Dairy Equipment',
+      'Preferred Factory Pricing & Direct Engineering Support',
+      'Warranty Backing & Fast-Track Spare Parts Dispatch',
+    ],
+  },
+  {
+    id: 'mou-korea',
+    title: 'Memorandum of Understanding (MOU) — Korean Tech Alliance',
+    authority: 'Korean Dairy Engineering & Industrial Technology Partners',
+    type: 'International Tech Collaboration',
+    identifier: 'Advanced Engineering Partner',
+    description: 'Cross-border cooperation agreement for automated process control, PLC/SCADA integration, high-hygiene aseptic packaging, and advanced dairy research collaboration.',
+    verified: true,
+    previewImage: '/images/greenfield-8-stages.jpeg',
+    badge: 'International Tech Partner',
+    details: [
+      'Technology Transfer for Advanced Aseptic Automation',
+      'Joint Research in Extended Shelf Life (ESL) Dairy Formulations',
+      'Specialized Sensor & Laboratory Instrumentation Sourcing',
+    ],
+  },
+];

@@ -13,6 +13,61 @@ export const company = {
   criticalRule: "Skip stage 1 and you pay for it at stage 7.",
   marketThesis: "That gap is not a problem. It is a market.",
 
+  // Vision, Mission & Core Values
+  vision: "To spearhead the modern industrial transformation of Pakistan's dairy and agro-food processing sector through world-class engineering standards, zero-compromise sanitary architecture, and verified technological self-reliance.",
+  mission: "To empower investors, dairy entrepreneurs, and industrial processors with unbiased technical consultancy, rigorous tender audits, and precision turnkey commissioning—ensuring maximum capital efficiency, highest product shelf life, and verified consumer safety.",
+  coreValues: [
+    {
+      title: "Vendor Neutrality",
+      description: "We are not machinery dealers bound by sales quotas. We represent the investor's balance sheet to secure the highest-performing, most cost-effective equipment without bias.",
+      code: "VAL-01"
+    },
+    {
+      title: "Engineering Precision",
+      description: "From mass-balance calculations to borescope-inspected sanitary orbital welding, our standards conform strictly to international 3A, EHEDG, and ISO 22000 benchmarks.",
+      code: "VAL-02"
+    },
+    {
+      title: "Scientific Dairy R&D",
+      description: "Bridging the gap between machinery hardware and biochemical formulation chemistry to guarantee optimal mouthfeel, stable emulsions, and extended commercial shelf life.",
+      code: "VAL-03"
+    },
+    {
+      title: "Fiduciary Stewardship",
+      description: "Protecting investor capital through rigorous comparative tender evaluations that routinely save 12% to 22% in initial plant CAPEX while eliminating costly downstream rework.",
+      code: "VAL-04"
+    }
+  ],
+
+  // STK Blue Brochure Trading Scope (Names Only for About Page)
+  tradingScopeNames: [
+    "Tubular & Plate UHT Sterilization Plants",
+    "High-Efficiency HTST Milk Pasteurizers",
+    "High-Pressure Homogenizers (Up to 600 Bar)",
+    "Self-Cleaning Centrifugal Cream Separators",
+    "Automatic Standardization & Blending Systems",
+    "Enclosed Sanitary Cheese Vats & Curd Lines",
+    "Jacketed Yogurt Incubation & Processing Tanks",
+    "Continuous Industrial Butter Churns & Compactors",
+    "Multi-Effect Falling Film Thermal Evaporators",
+    "Sanitary Spray Drying Towers & Fluid Beds",
+    "Automated Multi-Channel Clean-In-Place (CIP) Stations",
+    "Sanitary SS316L Mix-Proof Valve Manifolds & Pumps",
+    "Aseptic Brick & Gable-Top Liquid Packaging Machines",
+    "Raw Milk Reception, Deaeration & Chilling Bays",
+    "Turnkey Dairy QA Laboratory & Milk Analyzer Suites",
+    "Sanitary Storage Silos & Insulated Process Tanks"
+  ],
+
+  // Key People (Names & Verified Roles Only)
+  people: [
+    {
+      name: "Dr. Munib Siddiqui",
+      title: "Principal Dairy Consultant & Technical Director",
+      department: "Technical Advisory & Engineering"
+    }
+  ],
+
   // Contact Information
   contacts: {
     whatsapp: "+92 345 4491979",
