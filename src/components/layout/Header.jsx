@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, Menu, X, ArrowUpRight, Phone } from 'lucide-react';
 import { company, getWhatsAppUrl } from '../../data/company';
 import { WhatsAppButton } from '../ui/WhatsAppButton';
+import { LogoFull } from '../ui/Logo';
 import { clsx } from 'clsx';
 
 export function Header() {
@@ -33,31 +34,19 @@ export function Header() {
       className={clsx(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-400',
         isScrolled
-          ? 'bg-ivory-100/95 backdrop-blur-md shadow-sm py-3.5 border-b border-petrol-900/10'
-          : 'bg-transparent py-5 border-b border-petrol-900/5'
+          ? 'bg-ivory-100/95 backdrop-blur-md shadow-sm py-3 border-b border-petrol-900/10'
+          : 'bg-ivory-100/80 backdrop-blur-sm py-4 border-b border-petrol-900/5'
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Brand Logo */}
+          {/* Brand Logo Lockup */}
           <a
             href="#"
-            className="flex items-center gap-3.5 group focus-visible:outline-none"
+            className="group focus-visible:outline-none hover:opacity-95 transition-opacity"
             aria-label="AM Tradings and Consultants Homepage"
           >
-            {/* Monogram Badge */}
-            <div className="w-11 h-11 rounded-sm bg-gradient-to-br from-petrol-900 to-petrol-800 border border-gold-500/50 flex items-center justify-center shadow-md group-hover:border-gold-400 transition-colors">
-              <span className="font-serif font-bold text-xl text-gold-400">AM</span>
-            </div>
-            {/* Brand Title & Tagline */}
-            <div className="flex flex-col">
-              <span className="font-serif font-bold text-lg sm:text-xl text-petrol-900 tracking-tight leading-none group-hover:text-gold-700 transition-colors">
-                AM Tradings
-              </span>
-              <span className="text-[10px] font-mono font-semibold uppercase tracking-[0.18em] text-gold-700 mt-1">
-                &amp; Consultants
-              </span>
-            </div>
+            <LogoFull variant="light" />
           </a>
 
           {/* Desktop Navigation Links */}

@@ -8,43 +8,43 @@ export default {
     extend: {
       colors: {
         petrol: {
-          950: '#051D24', // Deepest Petrol
-          900: '#094B5B', // Official Primary Petrol Teal (from Letterhead & Card)
-          850: '#0C3151', // Official Deep Imperial Navy (from Letterhead & Card)
-          800: '#103E4A', // Rich Petrol
-          700: '#145363',
-          600: '#1A6B7F',
-          500: '#22869E',
-          400: '#38A3BD',
-          300: '#64BED4',
-          200: '#A8DBE8',
-          100: '#D2EEF5',
-          50: '#E6F6FD',  // Official Soft Ice Accent (from Business Card)
+          950: '#06222A', // Deepest Petrol
+          900: '#0A3642', // Primary Brand Petrol Dark Teal (#0A3642)
+          850: '#0E4D5D', // Tertiary Petrol Teal (#0E4D5D)
+          800: '#11586B',
+          700: '#15687E',
+          600: '#1A7E98',
+          500: '#2196B5',
+          400: '#41AFD0',
+          300: '#75C8DF',
+          200: '#AFE1EE',
+          100: '#DEF3F7',
+          50: '#F0F8FA',
         },
         gold: {
-          900: '#5A421C',
-          800: '#7E5E28',
-          700: '#9F7635',
-          600: '#B5883E',
-          500: '#C6984C', // Official Executive Gold (from Letterhead & Card)
-          400: '#D6AE68',
-          300: '#E4C78D',
-          200: '#EEDDB8',
-          100: '#F7EFE0',
-          50: '#FDFBF7',
+          900: '#5C410F',
+          800: '#7E5B15',
+          700: '#A3761B',
+          600: '#BD8A24',
+          500: '#D69E2E', // Secondary Brand Warm Gold (#D69E2E)
+          400: '#E1B354',
+          300: '#EAC87D',
+          200: '#F3DCA7',
+          100: '#F9EED3',
+          50: '#FDF9EE',
         },
         ivory: {
           50: '#FFFFFF',
-          100: '#F8FAFB', // Letterhead Canvas White
-          200: '#F1F5F7', // Crisp Cool Light Neutral
-          300: '#E2E9ED',
-          400: '#CBD6DC',
-          500: '#98A9B2',
+          100: '#F4F6F7', // Neutral Brand Base (#F4F6F7)
+          200: '#EAEFF1', // Soft Cool Neutral
+          300: '#DDE5E9',
+          400: '#C2D0D6',
+          500: '#9BB0B9',
         },
-        navy: {
-          DEFAULT: '#0C3151',
-          dark: '#072036',
-          light: '#144670',
+        tertiary: {
+          DEFAULT: '#0E4D5D', // Tertiary Brand Color (#0E4D5D)
+          dark: '#0A3642',
+          light: '#15687E',
         },
         whatsapp: {
           DEFAULT: '#25D366',

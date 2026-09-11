@@ -2,6 +2,7 @@ import React from 'react';
 import { Mail, Phone, MapPin, ArrowUpRight, ShieldCheck } from 'lucide-react';
 import { company, getWhatsAppUrl } from '../../data/company';
 import { WhatsAppButton, WhatsAppIcon } from '../ui/WhatsAppButton';
+import { LogoFull } from '../ui/Logo';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -12,19 +13,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-14 border-b border-white/10">
           {/* Brand Col */}
           <div className="lg:col-span-5 flex flex-col gap-5">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-sm bg-petrol-900 border border-gold-500/60 flex items-center justify-center">
-                <span className="font-serif font-bold text-lg text-gold-400">AM</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-serif font-bold text-xl text-white tracking-tight">
-                  {company.name}
-                </span>
-                <span className="text-[10px] font-mono font-medium text-gold-400 tracking-[0.16em] uppercase">
-                  {company.tagline}
-                </span>
-              </div>
-            </div>
+            <LogoFull variant="dark" />
 
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
               Independent technical consultancy, plant architecture, machinery procurement, and recipe engineering for Pakistan's dairy and industrial food processing sector.
