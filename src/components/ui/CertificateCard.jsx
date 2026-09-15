@@ -4,8 +4,11 @@ import { ShieldCheck, FileCheck2, ExternalLink, X, Eye, Award, Building, CheckCi
 import { WhatsAppButton } from './WhatsAppButton';
 import { Button } from './Button';
 
-export function CertificateCard({ certificate }) {
+export function CertificateCard({ certificate, cert }) {
+  const data = certificate || cert;
   const [isOpen, setIsOpen] = useState(false);
+
+  if (!data) return null;
 
   return (
     <>
@@ -23,20 +26,20 @@ export function CertificateCard({ certificate }) {
               <FileCheck2 className="w-5 h-5" />
             </div>
             <span className="text-[11px] font-display font-bold uppercase tracking-wider text-gold-700 bg-gold-50 px-2.5 py-1 rounded border border-gold-200">
-              {certificate.badge}
+              {data.badge}
             </span>
           </div>
 
           <h3 className="font-display text-lg font-bold text-petrol-900 mb-1.5 group-hover:text-gold-700 transition-colors leading-snug">
-            {certificate.title}
+            {data.title}
           </h3>
 
           <p className="text-xs font-display font-semibold uppercase tracking-wider text-slate-500 mb-3">
-            {certificate.authority}
+            {data.authority}
           </p>
 
           <p className="font-sans text-xs text-slate-600 leading-relaxed mb-5 line-clamp-3">
-            {certificate.description}
+            {data.description}
           </p>
         </div>
 
@@ -82,7 +85,7 @@ export function CertificateCard({ certificate }) {
                       Official Institutional Record
                     </span>
                     <span className="font-display font-bold text-sm text-white">
-                      {certificate.title}
+                      {data.title}
                     </span>
                   </div>
                 </div>
@@ -105,7 +108,7 @@ export function CertificateCard({ certificate }) {
                       Issuing / Governing Body
                     </span>
                     <span className="font-display text-base font-bold text-petrol-900">
-                      {certificate.authority}
+                      {data.authority}
                     </span>
                   </div>
                   <div className="text-right">
@@ -120,16 +123,16 @@ export function CertificateCard({ certificate }) {
                 </div>
 
                 <p className="font-sans text-sm text-slate-700 leading-relaxed mb-6">
-                  {certificate.description}
+                  {data.description}
                 </p>
 
-                {certificate.details && (
+                {data.details && (
                   <div className="bg-ivory-100 p-5 rounded border border-petrol-900/10 mb-6">
                     <h4 className="text-xs font-display font-bold uppercase tracking-widest text-petrol-900 mb-3">
                       Institutional Parameters &amp; Authority Details
                     </h4>
                     <div className="flex flex-col gap-2.5">
-                      {certificate.details.map((d, i) => (
+                      {data.details.map((d, i) => (
                         <div key={i} className="flex items-start gap-2.5 text-xs font-sans text-slate-800">
                           <CheckCircle2 className="w-4 h-4 text-gold-600 flex-shrink-0 mt-0.5" />
                           <span>{d}</span>
@@ -152,7 +155,7 @@ export function CertificateCard({ certificate }) {
                   <WhatsAppButton
                     variant="whatsapp"
                     size="sm"
-                    message={`Hello Dr. Munib, I am reviewing the official "${certificate.title}" on the AM Tradings portal and would like to initiate a formal business discussion.`}
+                    message={`Hello Dr. Munib, I am reviewing the official "${data.title}" on the AM Tradings portal and would like to initiate a formal business discussion.`}
                   >
                     Inquire Regarding Tender Credentials
                   </WhatsAppButton>

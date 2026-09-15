@@ -10,7 +10,8 @@ export const showcaseVideos = [
     category: 'Full Plant Overview',
     duration: '03:45',
     thumbnail: '/images/plant-consulting-dark.jpeg',
-    videoUrl: '', // Verified placeholder for client uploaded video stream
+    videoUrl: 'https://www.youtube.com/embed/pDseoVMag3Q?rel=0&modestbranding=1',
+    youtubeId: 'pDseoVMag3Q',
     description: 'Comprehensive operational footage of an automated turnkey dairy processing plant, featuring raw milk intake, HTST pasteurization, high-pressure homogenization, and automated storage silos in full commercial throughput.',
     highlights: [
       'Multi-stage thermal processing hall in active operation',

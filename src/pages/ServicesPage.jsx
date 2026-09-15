@@ -243,22 +243,32 @@ export function ServicesPage() {
             </div>
           </div>
 
-          {/* Category Filter Pills */}
+          {/* Fluid Animated Category Filter Pills */}
           <div className="flex flex-wrap gap-2 pb-8 border-b border-petrol-900/10">
-            {machineryCategories.map((cat) => (
-              <button
-                key={cat.id}
-                type="button"
-                onClick={() => setActiveCategory(cat.id)}
-                className={`px-3.5 py-2 text-xs font-mono font-bold uppercase tracking-wider rounded-xs transition-all ${
-                  activeCategory === cat.id
-                    ? 'bg-petrol-900 text-gold-400 shadow-sm'
-                    : 'bg-white text-slate-600 hover:bg-slate-100 border border-petrol-900/10'
-                }`}
-              >
-                {cat.label}
-              </button>
-            ))}
+            {machineryCategories.map((cat) => {
+              const isActive = activeCategory === cat.id;
+              return (
+                <button
+                  key={cat.id}
+                  type="button"
+                  onClick={() => setActiveCategory(cat.id)}
+                  className={`relative px-4 py-2 text-xs font-mono font-bold uppercase tracking-wider rounded-xs transition-colors ${
+                    isActive
+                      ? 'text-gold-400'
+                      : 'text-slate-600 hover:text-petrol-900 bg-white border border-petrol-900/10 hover:border-gold-500/40'
+                  }`}
+                >
+                  {isActive && (
+                    <motion.div
+                      layoutId="categoryFilterIndicator"
+                      className="absolute inset-0 bg-petrol-900 rounded-xs shadow-sm -z-0"
+                      transition={{ type: 'spring', stiffness: 380, damping: 32 }}
+                    />
+                  )}
+                  <span className="relative z-10">{cat.label}</span>
+                </button>
+              );
+            })}
           </div>
 
           {/* Machinery Grid */}

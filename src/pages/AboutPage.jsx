@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import {
@@ -10,7 +10,6 @@ import {
   Building2,
   FileCheck,
   ArrowRight,
-  Play,
   Layers,
   Cpu,
   FlaskConical,
@@ -20,13 +19,10 @@ import {
   Sparkles
 } from 'lucide-react';
 import { company } from '../data/company';
-import { showcaseVideos } from '../data/videos';
-import { VideoModal } from '../components/ui/VideoModal';
 import { SectionHeading } from '../components/ui/SectionHeading';
 import { WhatsAppButton } from '../components/ui/WhatsAppButton';
 
 export function AboutPage() {
-  const [selectedVideo, setSelectedVideo] = useState(null);
 
   const capabilityIcons = {
     'greenfield-consulting': Layers,
@@ -95,27 +91,20 @@ export function AboutPage() {
               </div>
             </div>
 
-            {/* Right: Company Plant Video / Video Showcase Card */}
+            {/* Right: Company Plant Showcase Card */}
             <div className="lg:col-span-5">
               <div className="rounded-sm overflow-hidden bg-petrol-950 border border-petrol-900/20 shadow-xl">
-                <div
-                  onClick={() => setSelectedVideo(showcaseVideos[0])}
-                  className="relative h-64 sm:h-72 w-full bg-petrol-950 cursor-pointer overflow-hidden group flex items-center justify-center"
-                >
+                <div className="relative h-64 sm:h-72 w-full bg-petrol-950 overflow-hidden group flex items-center justify-center">
                   <img
                     src="/images/plant-consulting-dark.jpeg"
                     alt="AM Tradings Industrial Operations"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 group-hover:opacity-90"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-90"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-petrol-950 via-petrol-950/40 to-transparent" />
-                  
-                  <div className="relative z-10 w-16 h-16 rounded-full bg-gold-500 group-hover:bg-gold-400 text-petrol-950 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
-                    <Play className="w-7 h-7 fill-current ml-1" />
-                  </div>
 
                   <div className="absolute bottom-4 left-4 right-4 z-10">
                     <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-gold-400 block mb-1">
-                      Industrial Operations Footage
+                      Industrial Processing Facility
                     </span>
                     <h3 className="text-base font-display font-bold text-white">
                       Turnkey Processing Hall &amp; Sanitary Infrastructure
@@ -349,13 +338,6 @@ export function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Video Modal Player */}
-      <VideoModal
-        video={selectedVideo}
-        isOpen={!!selectedVideo}
-        onClose={() => setSelectedVideo(null)}
-      />
     </div>
   );
 }

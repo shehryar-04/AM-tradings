@@ -29,9 +29,9 @@ export function Header() {
   const navLinks = [
     { label: 'Home', path: '/' },
     { label: 'About Us', path: '/about' },
-    { label: 'Services & Machinery', path: '/services' },
+    { label: 'Services', path: '/services' },
     { label: 'Projects', path: '/projects' },
-    { label: 'Contact & Enquire', path: '/contact' },
+    { label: 'Contact / Enquire', path: '/contact' },
   ];
 
   return (

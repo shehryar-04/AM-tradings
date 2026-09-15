@@ -4,16 +4,19 @@ import { clsx } from 'clsx';
 
 export function SectionHeading({
   eyebrow,
+  badge,
   title,
   subtitle,
   align = 'left',
   theme = 'light',
+  variant,
   className = '',
   titleClassName = '',
   subtitleClassName = '',
 }) {
   const isCenter = align === 'center';
-  const isDark = theme === 'dark';
+  const isDark = theme === 'dark' || variant === 'dark';
+  const tag = badge || eyebrow;
 
   return (
     <div
@@ -23,17 +26,17 @@ export function SectionHeading({
         className
       )}
     >
-      {eyebrow && (
+      {tag && (
         <Reveal direction="down" delay={0.05}>
           <div
             className={clsx(
-              'inline-flex items-center gap-2.5 text-xs font-bold uppercase tracking-[0.2em] mb-3.5',
+              'inline-flex items-center gap-2.5 text-xs font-mono font-bold uppercase tracking-[0.2em] mb-3.5',
               isDark ? 'text-gold-400' : 'text-gold-700'
             )}
           >
-            <span className="w-6 h-[2px] bg-gold-500 inline-block" />
-            <span>{eyebrow}</span>
-            {isCenter && <span className="w-6 h-[2px] bg-gold-500 inline-block" />}
+            <span className="w-5 h-[2px] bg-gold-500 inline-block" />
+            <span>{tag}</span>
+            {isCenter && <span className="w-5 h-[2px] bg-gold-500 inline-block" />}
           </div>
         </Reveal>
       )}
@@ -42,7 +45,7 @@ export function SectionHeading({
         <Reveal direction="up" delay={0.1}>
           <h2
             className={clsx(
-              'font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.18] tracking-tight mb-5',
+              'font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.18] tracking-tight mb-5',
               isDark ? 'text-white' : 'text-petrol-900',
               titleClassName
             )}

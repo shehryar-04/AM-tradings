@@ -52,7 +52,15 @@ export function VideoModal({
 
             {/* Video Player Display Area */}
             <div className="relative aspect-video bg-black flex items-center justify-center overflow-hidden">
-              {video.videoUrl ? (
+              {video.videoUrl?.includes('youtube.com') || video.videoUrl?.includes('youtu.be') ? (
+                <iframe
+                  src={video.videoUrl}
+                  title={video.title}
+                  className="w-full h-full border-0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              ) : video.videoUrl ? (
                 <video
                   src={video.videoUrl}
                   controls

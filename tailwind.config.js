@@ -52,9 +52,9 @@ export default {
         }
       },
       fontFamily: {
-        display: ['"Space Grotesk"', 'sans-serif'],
-        sans: ['"Work Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-        serif: ['"Space Grotesk"', 'sans-serif'], // Map serif references to Space Grotesk per DESIGN.md
+        display: ['"Outfit"', '"Space Grotesk"', 'sans-serif'],
+        sans: ['"Inter"', '"Work Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        serif: ['"Outfit"', '"Space Grotesk"', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
       },
       fontSize: {
@@ -73,9 +73,10 @@ export default {
       },
       boxShadow: {
         'card': '0 4px 16px -2px rgba(10, 54, 66, 0.08)',
-        'card-hover': '0 8px 24px -4px rgba(10, 54, 66, 0.12)',
-        'modal': '0 12px 32px -4px rgba(10, 54, 66, 0.16)',
+        'card-hover': '0 12px 28px -4px rgba(10, 54, 66, 0.12)',
+        'modal': '0 20px 48px -4px rgba(6, 34, 42, 0.35)',
         'gold-glow': '0 0 25px -5px rgba(214, 158, 46, 0.35)',
+        'gold-glow-lg': '0 0 40px -5px rgba(214, 158, 46, 0.45)',
         'luxury': '0 20px 50px -10px rgba(10, 54, 66, 0.15)',
         'luxury-dark': '0 24px 60px -15px rgba(6, 34, 42, 0.45)',
       },

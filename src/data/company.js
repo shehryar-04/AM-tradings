@@ -38,6 +38,9 @@ export const company = {
       code: "VAL-04"
     }
   ],
+  get values() {
+    return this.coreValues;
+  },
 
   // STK Blue Brochure Trading Scope (Names Only for About Page)
   tradingScopeNames: [

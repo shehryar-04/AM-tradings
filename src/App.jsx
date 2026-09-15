@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { motion, useScroll, useSpring } from 'framer-motion';
 import Lenis from 'lenis';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
@@ -14,6 +15,13 @@ import { WhatsAppIcon } from './components/ui/WhatsAppButton';
 import { company, getWhatsAppUrl } from './data/company';
 
 export default function App() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   // Smooth scroll initialization with Lenis
   useEffect(() => {
     // Check if user prefers reduced motion
@@ -44,6 +52,11 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      {/* Global Scroll Progress Bar */}
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-gold-600 via-gold-400 to-amber-300 origin-left z-[60] shadow-[0_0_12px_rgba(214,158,46,0.6)] pointer-events-none"
+        style={{ scaleX }}
+      />
       <div className="relative min-h-screen bg-ivory-100 text-petrol-900 flex flex-col font-sans overflow-x-hidden selection:bg-gold-500 selection:text-white">
         {/* Top Header */}
         <Header />
