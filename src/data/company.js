@@ -14,7 +14,7 @@ export const company = {
   marketThesis: "That gap is not a problem. It is a market.",
 
   // Vision, Mission & Core Values
-  vision: "To spearhead the modern industrial transformation of Pakistan's dairy and agro-food processing sector through world-class engineering standards, zero-compromise sanitary architecture, and verified technological self-reliance.",
+  vision: "To spearhead the modern industrial transformation of Pakistan's dairy and agro-food processing sector through world-class engineering standards, zero-compromise process architecture, and verified technological self-reliance.",
   mission: "To empower investors, dairy entrepreneurs, and industrial processors with unbiased technical consultancy, rigorous tender audits, and precision turnkey commissioning—ensuring maximum capital efficiency, highest product shelf life, and verified consumer safety.",
   coreValues: [
     {
@@ -24,7 +24,7 @@ export const company = {
     },
     {
       title: "Engineering Precision",
-      description: "From mass-balance calculations to borescope-inspected sanitary orbital welding, our standards conform strictly to international 3A, EHEDG, and ISO 22000 benchmarks.",
+      description: "From mass-balance calculations to borescope-inspected orbital welding, our standards conform strictly to international 3A, EHEDG, and ISO 22000 benchmarks.",
       code: "VAL-02"
     },
     {
@@ -49,41 +49,38 @@ export const company = {
     "High-Pressure Homogenizers (Up to 600 Bar)",
     "Self-Cleaning Centrifugal Cream Separators",
     "Automatic Standardization & Blending Systems",
-    "Enclosed Sanitary Cheese Vats & Curd Lines",
+    "Enclosed Cheese Vats & Curd Lines",
     "Jacketed Yogurt Incubation & Processing Tanks",
     "Continuous Industrial Butter Churns & Compactors",
     "Multi-Effect Falling Film Thermal Evaporators",
-    "Sanitary Spray Drying Towers & Fluid Beds",
+    "Industrial Spray Drying Towers & Fluid Beds",
     "Automated Multi-Channel Clean-In-Place (CIP) Stations",
-    "Sanitary SS316L Mix-Proof Valve Manifolds & Pumps",
+    "Food-Grade SS316L Mix-Proof Valve Manifolds & Pumps",
     "Aseptic Brick & Gable-Top Liquid Packaging Machines",
     "Raw Milk Reception, Deaeration & Chilling Bays",
     "Turnkey Dairy QA Laboratory & Milk Analyzer Suites",
-    "Sanitary Storage Silos & Insulated Process Tanks"
+    "Aseptic Storage Silos & Insulated Process Tanks"
   ],
 
-  // Key People & Division Leadership (Technical Advisory, Engineering & Management)
+  // Key People & Division Leadership (Technical Advisory, Engineering Advisory & Business Advisory)
   people: [
     {
-      department: "Technical Advisory and Industry Insights",
+      department: "Technical Advisory & Industry Insights",
       name: "Dr. Asif Iftikhar",
-      title: "Principal Dairy Consultant and CEO of the firm",
-      scope: "Turnkey Dairy Engineering, Recipe Formulation Chemistry & Executive Leadership",
-      badge: "CEO & Advisory"
+      title: "Principal Dairy Consultant & CEO of the Firm",
+      badge: "Technical Advisory & CEO"
     },
     {
-      department: "Engineering Division",
+      department: "Engineering Advisory",
       name: "Engr. M. Essa Siddiqui",
-      title: "Technical Director",
-      scope: "Site Planning, Electrical and Automation",
-      badge: "Engineering Division"
+      title: "Site Planning, Electrical & Automation — Technical Director",
+      badge: "Engineering Advisory"
     },
     {
-      department: "Management Division",
+      department: "Business Advisory & Consultancy",
       name: "Dr. Munib Siddiqui",
-      title: "Business Feasibility & Strategy",
-      scope: "Business Feasibility and Viability Advisory, Market Potential and Sales Strategy Development",
-      badge: "Management Division"
+      title: "Business Feasibility & Viability Advisory, Market Potential & Sales Strategy Development",
+      badge: "Business Advisory"
     }
   ],
 
@@ -133,7 +130,7 @@ export const company = {
   // Market Intelligence (Pakistan Dairy Landscape)
   marketData: {
     headline: "Pakistan Dairy Sector: An Unprecedented Industrialization Window",
-    subheadline: "While Pakistan ranks as the 4th largest global milk producer, only ~3% is industrially processed. AM Tradings bridges this gap with world-class plant engineering.",
+    subheadline: "While Pakistan ranks as the 4th largest global milk producer, only ~3% is industrially processed. AM Tradings bridges this gap with world-class technical advisory and plant consultancy.",
     stats: [
       {
         value: "74.7M",
@@ -174,10 +171,10 @@ export const company = {
       id: "greenfield-consulting",
       number: "01",
       title: "Turnkey Dairy Plant Consulting",
-      summary: "End-to-end architectural, process, and civil engineering for Greenfield and Brownfield dairy plants.",
-      description: "From concept to full commercial production, we design comprehensive processing facilities optimized for high throughput, hygienic compliance (EHEDG/FDA), energy efficiency, and operational safety.",
+      summary: "End-to-end architectural, process layout, and civil planning advisory for Greenfield and Brownfield dairy plants.",
+      description: "From concept to full commercial production, we advise on comprehensive processing facilities optimized for high throughput, hygienic compliance (EHEDG/FDA), energy efficiency, and operational safety.",
       deliverables: [
-        "Complete plant master layout & civil engineering drawings",
+        "Complete plant master layout & civil engineering planning",
         "Process flow diagrams (PFD) and Piping & Instrumentation (P&ID)",
         "Mass & thermal energy balance calculations",
         "Utility sizing (steam boilers, chillers, compressed air, CIP)"
@@ -192,18 +189,18 @@ export const company = {
       deliverables: [
         "Vendor pre-qualification and technical tender audits",
         "Direct manufacturer pricing negotiation & CAPEX reduction",
-        "Sanitary standards verification (3A / EHEDG compliance)",
+        "Hygienic standards verification (3A / EHEDG compliance)",
         "Logistics, customs clearance, and port handling advisory"
       ]
     },
     {
       id: "installation-commissioning",
       number: "03",
-      title: "Installation, Piping & Commissioning",
-      summary: "On-site mechanical installation, sanitary SS304/SS316L orbital welding, electrical automation, and commissioning.",
-      description: "Our certified engineers oversee on-site mechanical erection, automated PLC/SCADA integration, hygienic loop piping, utility tie-ins, dry/wet trial runs, and full production commissioning.",
+      title: "Installation, Piping & Commissioning Advisory",
+      summary: "Supervisory oversight of on-site mechanical installation, SS304/SS316L orbital welding, electrical automation, and commissioning.",
+      description: "Our technical advisors provide rigorous engineering supervision for mechanical erection, automated PLC/SCADA integration, hygienic loop piping, utility tie-ins, dry/wet trial runs, and production commissioning.",
       deliverables: [
-        "Certified sanitary orbital tube welding & validation",
+        "Certified orbital tube welding & validation supervision",
         "SCADA/PLC control system programming and loop checks",
         "Water testing, thermal testing, and chemical passivization",
         "First-batch commercial trial runs and yield sign-off"
@@ -303,7 +300,7 @@ export const company = {
       criticalNote: "Proper zoning prevents microbial cross-contamination permanently.",
       summary: "3D architectural layout, cleanroom zoning (High Care / Low Care), thermal energy recovery, and effluent treatment routing.",
       activities: [
-        "P&ID generation with sanitary valve matrix logic",
+        "P&ID generation with mix-proof valve matrix logic",
         "High-hygiene cleanroom partitioning and HVAC pressure differentials",
         "Automated Clean-in-Place (CIP) loop circuit segregation",
         "Effluent Treatment Plant (ETP) capacity and environmental design"
@@ -331,7 +328,7 @@ export const company = {
       title: "Civil, Utility & Piping Architecture",
       subtitle: "Infrastructure That Stands the Test of Time",
       criticalNote: "Defective utility piping causes 70% of premature plant breakdowns.",
-      summary: "Sanitary floor drainage, steam boiler plants, chilled water refrigeration, compressed air, and water treatment.",
+      summary: "Hygienic floor drainage, steam boiler plants, chilled water refrigeration, compressed air, and water treatment.",
       activities: [
         "Anti-acid epoxy and polyurethane flooring specifications",
         "Steam generation, boiler water softening, and condensate return lines",
@@ -344,11 +341,11 @@ export const company = {
       step: 6,
       phase: "Stage 06",
       title: "Installation, Automation & Electrical",
-      subtitle: "Precision Sanitary Erection & PLC Control",
-      criticalNote: "Sanitary orbital welding is non-negotiable for aseptic dairy lines.",
-      summary: "On-site mechanical placement, SS316L sanitary piping, electrical control cabinets, and SCADA automation programming.",
+      subtitle: "Precision Mechanical Erection & PLC Control",
+      criticalNote: "High-precision orbital welding is non-negotiable for aseptic dairy lines.",
+      summary: "On-site mechanical placement, SS316L process piping, electrical control cabinets, and SCADA automation programming.",
       activities: [
-        "Borescope-inspected sanitary orbital welding of milk flow lines",
+        "Borescope-inspected orbital welding of milk flow lines",
         "MCC / PLC panel wiring and industrial Ethernet network cabling",
         "Pneumatic valve manifold integration and feedback sensor calibration",
         "Automated recipe batching and CIP sequence programming"
@@ -408,16 +405,16 @@ export const company = {
     {
       category: "Cultured, Cheese & Value-Added Lines",
       items: [
-        { name: "Industrial Cheese Vats & Curd Knives", desc: "Sanitary closed and open cheese vats with automated curd cutting and stirring." },
+        { name: "Industrial Cheese Vats & Curd Knives", desc: "Enclosed and open cheese vats with automated curd cutting and stirring." },
         { name: "Yogurt Incubation & Processing Tanks", desc: "Jacketed insulated tanks with low-shear agitation for smooth viscosity." },
         { name: "Continuous Butter Churns & Vacuum Compactors", desc: "High-yield continuous butter making machines from fresh or fermented cream." }
       ]
     },
     {
-      category: "Plant Sanitation & Sanitary Flow",
+      category: "Plant CIP & Process Flow",
       items: [
         { name: "Automated Multi-Channel CIP Systems", desc: "Independent multi-tank Clean-In-Place units with automated chemical dosing and conductivity tracking." },
-        { name: "Sanitary SS316L Valves & Manifolds", desc: "Mix-proof double-seat valves, butterfly valves, and sanitary centrifugal pumps." },
+        { name: "SS316L Valves & Manifolds", desc: "Mix-proof double-seat valves, butterfly valves, and hygienic centrifugal pumps." },
         { name: "Aseptic Sampling Valves & Pigging Systems", desc: "Zero product waste pigging systems for high-viscosity dairy applications." }
       ]
     }

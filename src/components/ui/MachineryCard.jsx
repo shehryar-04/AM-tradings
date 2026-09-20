@@ -28,15 +28,14 @@ export function MachineryCard({ item }) {
             loading="lazy"
             onLoad={() => setImageLoaded(true)}
             onError={() => setImageError(true)}
-            className={`w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ${
-              imageLoaded ? 'opacity-100' : 'opacity-0'
-            }`}
+            className={`w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'
+              }`}
           />
         ) : (
           <div className="flex flex-col items-center justify-center p-4 text-center text-slate-400">
             <Cog className="w-9 h-9 text-gold-400/60 mb-1 animate-spin-slow" />
             <span className="text-[10px] font-mono uppercase tracking-wider text-slate-400">
-              STK Sanitary Equipment
+              STK   Equipment
             </span>
           </div>
         )}
@@ -60,7 +59,7 @@ export function MachineryCard({ item }) {
         {/* Machine Name in image bottom */}
         <div className="absolute bottom-2.5 left-3 right-3 pointer-events-none">
           <span className="text-[10px] font-mono text-gold-400 uppercase tracking-widest block mb-0.5">
-            {item.origin || 'Sanitary Standard'}
+            {item.origin || 'European Standard'}
           </span>
           <h3 className="text-base font-display font-bold text-white leading-tight drop-shadow-md">
             {item.name}

@@ -1,10 +1,10 @@
 import React from 'react';
-import { 
-  ShieldCheck, 
-  DollarSign, 
-  Cpu, 
-  Globe2, 
-  Layers, 
+import {
+  ShieldCheck,
+  DollarSign,
+  Cpu,
+  Globe2,
+  Layers,
   Award,
   CheckCircle,
   HelpCircle
@@ -36,7 +36,7 @@ export function WhyUs() {
     },
     {
       title: "End-to-End Hands-On Commissioning",
-      description: "We don't hand over blueprints and leave. Our engineering team remains on-site through sanitary welding inspection, water trials, chemical passivation, and first commercial batch sign-off.",
+      description: "We don't hand over blueprints and leave. Our advisory team remains on-site through orbital welding inspection supervision, water trials, chemical passivation, and first commercial batch sign-off.",
       icon: Layers,
       badge: "Turnkey Execution",
     },

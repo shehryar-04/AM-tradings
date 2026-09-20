@@ -6,7 +6,7 @@
 export const testimonials = [
   {
     id: 'rev-1',
-    quote: "The machinery sourcing process was smooth, transparent, and saved us significant capital on European sanitary lines.",
+    quote: "The machinery sourcing process was smooth, transparent, and saved us significant capital on European processing lines.",
     sector: "Dairy Plant Sourcing",
   },
   {
@@ -42,7 +42,7 @@ export const testimonials = [
   {
     id: 'rev-8',
     quote: "The orbital welding inspection and CIP loop design gave us complete confidence in our aseptic lines.",
-    sector: "Sanitary Process Engineering",
+    sector: "Hygienic Process Engineering",
   },
   {
     id: 'rev-9',

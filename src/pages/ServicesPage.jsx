@@ -42,17 +42,17 @@ export function ServicesPage() {
   const consultancyServices = [
     {
       id: 'greenfield-plant',
-      title: 'Turnkey Greenfield Plant Engineering',
+      title: 'Turnkey Greenfield Plant Technical Advisory',
       icon: Layers,
       scope: 'Full-Lifecycle Advisory',
-      description: 'End-to-end plant design, 3D hygienic zoning, process flow diagrams (PFD), sanitary P&ID, civil layout supervision, and commercial handover.',
+      description: 'End-to-end plant design, 3D hygienic zoning, process flow diagrams (PFD), detailed P&ID, civil layout supervision, and commercial handover.',
       deliverables: [
         'Hygienic 3D architectural master plan',
         'Process & Instrumentation Diagrams (P&ID)',
         'Thermal & mass energy balance modeling',
         'Punjab Food Authority (PFA) audit compliance',
       ],
-      whatsappMsg: 'Hello Dr. Asif Iftikhar, I would like to inquire about Greenfield Plant Engineering consultancy for our project.',
+      whatsappMsg: 'Hello Dr. Asif Iftikhar, I would like to inquire about Greenfield Plant Technical Advisory for our project.',
     },
     {
       id: 'tender-audit',
@@ -62,7 +62,7 @@ export function ServicesPage() {
       description: 'Unbiased technical audit of vendor machinery proposals, protecting investors from over-specifications, mismatched capacities, and inflated commercial quotes.',
       deliverables: [
         'Line-by-line vendor comparison matrices',
-        'Sanitary standards validation (3A / EHEDG / ISO)',
+        'International standards validation (3A / EHEDG / ISO)',
         'Direct OEM price negotiations & scope de-risking',
         'Utility consumption and life-cycle cost analysis',
       ],
@@ -84,17 +84,17 @@ export function ServicesPage() {
     },
     {
       id: 'piping-commissioning',
-      title: 'Sanitary Orbital Piping & Commissioning',
+      title: 'Hygienic Orbital Piping & Commissioning',
       icon: Wrench,
       scope: 'Site Execution',
-      description: 'Supervision of certified SS316L sanitary orbital tube welding, automated SCADA/PLC integration, chemical passivation, and water/live-milk trials.',
+      description: 'Supervision of certified SS316L orbital tube welding, automated SCADA/PLC integration, chemical passivation, and water/live-milk trials.',
       deliverables: [
         'Borescope weld inspection & hygienic validation',
         'SCADA/PLC loop checks and valve manifold testing',
         '5-stage CIP cycle flow and conductivity verification',
         'First-batch commercial yield and microbial sign-off',
       ],
-      whatsappMsg: 'Hello Dr. Asif Iftikhar, I need expert supervision for sanitary piping installation and plant commissioning.',
+      whatsappMsg: 'Hello Dr. Asif Iftikhar, I need expert supervision for hygienic piping installation and plant commissioning.',
     },
     {
       id: 'qa-lab',
@@ -119,20 +119,20 @@ export function ServicesPage() {
       deliverables: [
         'Tungsten carbide & ceramic homogenizer components',
         'Clip-on EPDM/NBR food-grade plate gaskets',
-        'Sanitary mechanical seals and impeller kits',
+        'Hygienic mechanical seals and impeller kits',
         'Aseptic diaphragm valves and solenoid coils',
       ],
-      whatsappMsg: 'Hello Dr. Asif Iftikhar, I need to source genuine sanitary spare parts for our dairy processing equipment.',
+      whatsappMsg: 'Hello Dr. Asif Iftikhar, I need to source genuine spare parts for our dairy processing equipment.',
     },
   ];
 
   return (
     <div className="flex flex-col min-h-screen bg-ivory-100 pt-24 pb-20">
-      
+
       {/* Header Banner */}
       <section className="bg-petrol-950 text-white py-16 lg:py-20 border-b border-petrol-900/20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem]" />
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-gold-500/10 border border-gold-500/30 text-gold-400 rounded-xs text-xs font-mono font-bold uppercase tracking-widest mb-4">
@@ -142,7 +142,7 @@ export function ServicesPage() {
               Services &amp; Industrial Equipment
             </h1>
             <p className="text-base sm:text-lg text-slate-300 font-sans leading-relaxed">
-              Official STK sanitary processing machinery catalogue and comprehensive engineering consultancy tailored to dairy and food processors.
+              Official STK processing machinery catalogue and comprehensive technical advisory &amp; consultancy tailored to dairy and food processors.
             </p>
           </div>
         </div>
@@ -220,12 +220,12 @@ export function ServicesPage() {
       {/* 2. MACHINERY & EQUIPMENT CATALOGUE (STK BLUE BROCHURE) */}
       <section className="py-20 bg-ivory-200 border-b border-petrol-900/10" id="machinery">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
             <div>
               <SectionHeading
                 badge="STK Machinery Scope"
-                title="Industrial Sanitary Processing Catalogue"
+                title="Industrial Processing & Machinery Catalogue"
                 subtitle="Authentic machinery lines extracted directly from the STK bilateral procurement scope. High-grade SS316L/SS304 construction."
               />
             </div>
@@ -252,11 +252,10 @@ export function ServicesPage() {
                   key={cat.id}
                   type="button"
                   onClick={() => setActiveCategory(cat.id)}
-                  className={`relative px-4 py-2 text-xs font-mono font-bold uppercase tracking-wider rounded-xs transition-colors ${
-                    isActive
+                  className={`relative px-4 py-2 text-xs font-mono font-bold uppercase tracking-wider rounded-xs transition-colors ${isActive
                       ? 'text-gold-400'
                       : 'text-slate-600 hover:text-petrol-900 bg-white border border-petrol-900/10 hover:border-gold-500/40'
-                  }`}
+                    }`}
                 >
                   {isActive && (
                     <motion.div
@@ -278,7 +277,7 @@ export function ServicesPage() {
                 Showing {filteredMachinery.length} of {machineryItems.length} verified equipment lines
               </span>
               <span className="text-gold-700 font-semibold">
-                STK Official Sanitary Standard
+                STK Official   Standard
               </span>
             </div>
 
@@ -345,7 +344,7 @@ export function ServicesPage() {
             Request an Official Machinery Quote or Tender Review
           </h2>
           <p className="text-sm text-slate-600 max-w-xl">
-            Our engineering team will review your mass-balance calculations, utility requirements, and provide a comprehensive proposal.
+            Our advisory team will review your mass-balance calculations, utility requirements, and provide a comprehensive proposal.
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
             <Link

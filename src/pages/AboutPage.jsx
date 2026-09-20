@@ -36,11 +36,11 @@ export function AboutPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-ivory-100 pt-24 pb-20">
-      
+
       {/* Header Banner */}
       <section className="bg-petrol-950 text-white py-16 lg:py-20 border-b border-petrol-900/20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem]" />
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-gold-500/10 border border-gold-500/30 text-gold-400 rounded-xs text-xs font-mono font-bold uppercase tracking-widest mb-4">
@@ -50,7 +50,7 @@ export function AboutPage() {
               About AM Tradings &amp; Consultants
             </h1>
             <p className="text-base sm:text-lg text-slate-300 font-sans leading-relaxed">
-              Pioneering independent dairy plant engineering, sanitary machinery procurement, and scientific formulation R&amp;D for Pakistan's agro-industrial sector.
+              Pioneering independent dairy plant technical advisory, machinery procurement, and scientific formulation R&amp;D for Pakistan's agro-industrial sector.
             </p>
           </div>
         </div>
@@ -60,11 +60,11 @@ export function AboutPage() {
       <section className="py-16 bg-white border-b border-petrol-900/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
+
             <div className="lg:col-span-7 flex flex-col gap-6">
               <SectionHeading
                 badge="Background & Expertise"
-                title="Engineering Stewardship with Uncompromising Independence"
+                title="Advisory Stewardship with Uncompromising Independence"
                 subtitle="Transforming agro-investor capital into high-yield, hygienic dairy processing assets."
               />
 
@@ -76,7 +76,7 @@ export function AboutPage() {
                   Our practice operates on an unshakeable fiduciary rule: <em>"We do not make the machines. We decide which one you should buy."</em> Because we are independent technical consultants rather than quota-driven equipment sales agents, our sole obligation is the investor's balance sheet, plant longevity, and product quality.
                 </p>
                 <p>
-                  Headed by <strong>Dr. Asif Iftikhar</strong> (Doctorate in Food Science &amp; Dairy Technology, 25+ years industry experience), AM Tradings bridges high-level process engineering with hands-on mechanical erection, sanitary stainless steel welding supervision, recipe formulation, and regulatory compliance.
+                  Headed by <strong>Dr. Asif Iftikhar</strong> (Doctorate in Food Science &amp; Dairy Technology, 25+ years industry experience), AM Tradings bridges high-level technical advisory with process planning, stainless steel welding supervision, recipe formulation, and regulatory compliance.
                 </p>
               </div>
 
@@ -107,7 +107,7 @@ export function AboutPage() {
                       Industrial Processing Facility
                     </span>
                     <h3 className="text-base font-display font-bold text-white">
-                      Turnkey Processing Hall &amp; Sanitary Infrastructure
+                      Turnkey Processing Hall &amp;   Infrastructure
                     </h3>
                   </div>
                 </div>
@@ -137,9 +137,9 @@ export function AboutPage() {
       <section className="py-20 bg-ivory-200 border-b border-petrol-900/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            badge="Technical Scope"
-            title="Comprehensive Consultancy Capabilities"
-            subtitle="The complete 7 core engineering pillars extracted from official AM Tradings advisory practice."
+            badge="Turnkey Methodology"
+            title="7 Core Capability Pillars"
+            subtitle="The complete 7 core capability pillars extracted from official AM Tradings advisory practice."
             align="center"
           />
 
@@ -207,7 +207,7 @@ export function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Trading Scope"
-            title="Sanitary Machinery &amp; Equipment Lines (STK Scope)"
+            title="Industrial Machinery &amp; Equipment Lines (STK Scope)"
             subtitle="Authoritative equipment lines sourced and represented under the STK bilateral partnership. (Displaying equipment categories only; detailed specifications available on Services)."
             align="center"
           />
@@ -251,7 +251,7 @@ export function AboutPage() {
           <SectionHeading
             badge="Institutional Leadership"
             title="Team &amp; Advisory Directorate"
-            subtitle="Principal consulting leadership, engineering directors, and commercial strategists driving turnkey excellence."
+            subtitle="Principal consulting leadership, technical advisors, and commercial strategists driving turnkey excellence."
             align="center"
           />
 
@@ -275,16 +275,12 @@ export function AboutPage() {
                     {person.department}
                   </span>
 
-                  <h3 className="text-xl font-display font-bold text-petrol-900 mb-1">
+                  <h3 className="text-xl font-display font-bold text-petrol-900 mb-2">
                     {person.name}
                   </h3>
 
-                  <p className="text-xs text-petrol-900 font-mono font-bold mb-3">
+                  <p className="text-xs text-slate-700 font-medium leading-relaxed">
                     {person.title}
-                  </p>
-
-                  <p className="text-xs text-slate-600 leading-relaxed pt-3 border-t border-slate-100">
-                    {person.scope}
                   </p>
                 </div>
 

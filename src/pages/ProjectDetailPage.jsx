@@ -50,7 +50,7 @@ export function ProjectDetailPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-ivory-100 pt-24 pb-20">
-      
+
       {/* 1. PROJECT HERO HEADER */}
       <section className="bg-petrol-950 text-white py-16 lg:py-20 border-b border-petrol-900/20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -127,15 +127,15 @@ export function ProjectDetailPage() {
       <section className="py-16 bg-white border-b border-petrol-900/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            
+
             {/* Left Column: Description & Scope */}
             <div className="lg:col-span-8 flex flex-col gap-10">
-              
+
               {/* Detailed Narrative */}
               <div>
                 <h2 className="text-xl font-display font-bold text-petrol-900 mb-4 pb-2 border-b border-petrol-900/10 flex items-center gap-2">
                   <Layers className="w-5 h-5 text-gold-600" />
-                  Project Overview &amp; Engineering Challenge
+                  Project Overview &amp; Technical Scope
                 </h2>
                 <div className="prose prose-slate text-sm text-slate-700 leading-relaxed space-y-4">
                   <p>{project.description}</p>
@@ -147,7 +147,7 @@ export function ProjectDetailPage() {
                 <div>
                   <h3 className="text-lg font-display font-bold text-petrol-900 mb-4 flex items-center gap-2">
                     <ShieldCheck className="w-5 h-5 text-gold-600" />
-                    Delivered Engineering Scope
+                    Delivered Advisory Scope
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {project.scope.map((item, idx) => (
@@ -170,7 +170,7 @@ export function ProjectDetailPage() {
                 <div>
                   <h3 className="text-lg font-display font-bold text-petrol-900 mb-4 flex items-center gap-2">
                     <Cpu className="w-5 h-5 text-gold-600" />
-                    Machinery &amp; Sanitary Equipment Integrated
+                    Machinery &amp;   Equipment Integrated
                   </h3>
                   <div className="p-5 bg-petrol-950 text-white rounded-sm border border-petrol-900">
                     <ul className="space-y-2.5">
@@ -209,7 +209,7 @@ export function ProjectDetailPage() {
 
             {/* Right Column: Impact Metrics & Consultation Callout */}
             <div className="lg:col-span-4 flex flex-col gap-6">
-              
+
               {/* Impact Metrics Card */}
               {project.impactMetrics && project.impactMetrics.length > 0 && (
                 <div className="p-6 bg-petrol-900 text-white rounded-sm shadow-md">

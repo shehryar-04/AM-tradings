@@ -21,7 +21,7 @@ export const machineryItems = [
     category: 'homogenization',
     categoryLabel: 'Homogenization',
     image: '/images/machinery/homogenizer-high-pressure.jpg',
-    origin: 'STK Machinery / Sanitary Standards',
+    origin: 'STK Machinery / European Standards',
     description: 'High-pressure multi-stage homogenizer engineered for micron-scale fat dispersion, emulsion stability, and optimal viscosity.',
     features: [
       'Operating pressure: Up to 600 Bar continuous duty',
@@ -36,11 +36,11 @@ export const machineryItems = [
     category: 'thermal',
     categoryLabel: 'Thermal Processing',
     image: '/images/machinery/pasteurizer-plant.jpg',
-    origin: 'STK Machinery / Sanitary Standards',
+    origin: 'STK Machinery / European Standards',
     description: 'High-efficiency plate heat exchanger pasteurization line with multi-stage regenerative thermal recovery and automated diversion control.',
     features: [
       'Regenerative thermal energy recovery up to 94%',
-      'Sanitary SS316L plate pack with clip-on food-grade gaskets',
+      'Food-grade SS316L plate pack with clip-on gaskets',
       'Automated flow diversion valve (FDV) safeguard'
     ],
     applications: ['Fresh Pasteurized Milk', 'Pouch Milk Packaging', 'Standardized Milk', 'Cheese Prep']
@@ -51,7 +51,7 @@ export const machineryItems = [
     category: 'evaporation',
     categoryLabel: 'Evaporation',
     image: '/images/machinery/evaporator-falling-film.jpg',
-    origin: 'STK Machinery / Sanitary Standards',
+    origin: 'STK Machinery / European Standards',
     description: 'Multi-effect falling film thermal evaporator designed for energy-efficient concentration of liquid dairy and whey streams.',
     features: [
       'Thermal Vapor Recompression (TVR) for reduced steam consumption',
@@ -66,7 +66,7 @@ export const machineryItems = [
     category: 'separation',
     categoryLabel: 'Separation',
     image: '/images/machinery/cream-separator.jpg',
-    origin: 'STK Machinery / Sanitary Standards',
+    origin: 'STK Machinery / European Standards',
     description: 'High-speed solid-ejecting disc-stack centrifugal separator for precision milk skimming, fat standardization, and clarification.',
     features: [
       'Skimming efficiency: Residual fat in skim milk ≤ 0.04%',
@@ -81,8 +81,8 @@ export const machineryItems = [
     category: 'deodorizing',
     categoryLabel: 'Deodorizing',
     image: '/images/machinery/deaerator-system.jpg',
-    origin: 'STK Machinery / Sanitary Standards',
-    description: 'Sanitary vacuum deaeration and deodorizing unit to eliminate entrained air, off-flavors, and volatile odors from raw milk.',
+    origin: 'STK Machinery / European Standards',
+    description: 'Continuous vacuum deaeration and deodorizing unit to eliminate entrained air, off-flavors, and volatile odors from raw milk.',
     features: [
       'Vacuum flash chamber with high-efficiency aroma recovery',
       'Eliminates feed odors and air bubbles prior to pasteurization',
@@ -96,8 +96,8 @@ export const machineryItems = [
     category: 'filling-packaging',
     categoryLabel: 'Filling & Packaging',
     image: '/images/machinery/aseptic-filling-machine.jpg',
-    origin: 'STK Machinery / Sanitary Standards',
-    description: 'Automated sanitary cup and pouch filling and sealing machine with ultra-clean laminar flow and precise volumetric dosing.',
+    origin: 'STK Machinery / European Standards',
+    description: 'Automated cup and pouch filling and sealing machine with ultra-clean laminar flow and precise volumetric dosing.',
     features: [
       'Precise multi-head volumetric piston dosing for viscous yogurt',
       'UV/HEPA cup sterilization and hermetic heat-sealing station',

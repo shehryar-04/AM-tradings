@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  AlertTriangle, 
-  CheckCircle2, 
-  ArrowRight, 
-  ChevronRight, 
-  Layers, 
-  ShieldAlert, 
+import {
+  AlertTriangle,
+  CheckCircle2,
+  ArrowRight,
+  ChevronRight,
+  Layers,
+  ShieldAlert,
   Clock,
   Sparkles
 } from 'lucide-react';
@@ -32,7 +32,7 @@ export function GreenfieldStages() {
         <SectionHeading
           eyebrow="Systematic Execution Standard"
           title="The 8 Stages of a Greenfield Dairy Project"
-          subtitle="A disciplined engineering and consulting roadmap ensuring zero rework, certified sanitary compliance, and maximum capital efficiency."
+          subtitle="A disciplined engineering and consulting roadmap ensuring zero rework, certified regulatory compliance, and maximum capital efficiency."
           theme="dark"
         />
 

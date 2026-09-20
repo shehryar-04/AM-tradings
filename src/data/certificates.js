@@ -10,7 +10,7 @@ export const certificates = [
     authority: 'Securities & Exchange Commission of Pakistan (SECP)',
     type: 'Legal Incorporation',
     identifier: 'Incorporated Entity',
-    description: 'Official corporate registration certifying AM Tradings & Consultants as a legally established private limited enterprise authorized for industrial consulting, machinery procurement, and engineering services.',
+    description: 'Official corporate registration certifying AM Tradings & Consultants as a legally established private limited enterprise authorized for industrial consulting, machinery procurement, and technical advisory.',
     verified: true,
     previewImage: '/images/plant-consulting-dark.jpeg',
     badge: 'Statutory Incorporation',

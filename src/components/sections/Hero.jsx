@@ -153,7 +153,7 @@ export function Hero() {
                     Beyond Trade
                   </p>
                   <p className="text-[11px] text-slate-600 mt-0.5 leading-snug">
-                    Engineering, recipe development, and equipment procurement under one roof.
+                    Technical advisory, recipe development, and equipment procurement under one roof.
                   </p>
                 </motion.div>
               </div>

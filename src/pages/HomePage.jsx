@@ -44,13 +44,13 @@ export function HomePage() {
   // Rotating Hero Statements
   const heroSlides = [
     {
-      badge: 'Industrial Machinery Engineering',
-      title: 'Sanitary Processing Plants & Turnkey Automation',
-      subtitle: 'Official procurement representative for STK Sanitary Engineering & European standard dairy lines.',
+      badge: 'Industrial Machinery & Technical Advisory',
+      title: 'Dairy Processing Plants & Turnkey Automation',
+      subtitle: 'Official procurement representative for STK Engineering & European standard dairy lines.',
       tag: 'Stainless Steel SS316L Standard',
     },
     {
-      badge: 'Engineering & Feasibility Consultancy',
+      badge: 'Technical Advisory & Feasibility Consultancy',
       title: 'Turnkey Greenfield Dairy & Food Processing Plants',
       subtitle: 'From 3D architectural master planning to live-milk commissioning led by Dr. Asif Iftikhar.',
       tag: 'Independent Vendor-Neutral Audits',
@@ -64,7 +64,7 @@ export function HomePage() {
     {
       badge: 'Strategic Innovation',
       title: 'AM Wellness Initiative & Global Partnerships',
-      subtitle: 'Connecting Pakistani agro-industrial investors with advanced food science and sanitary machinery.',
+      subtitle: 'Connecting Pakistani agro-industrial investors with advanced food science and processing machinery.',
       tag: 'Global Technology Transfer',
     },
   ];
@@ -92,7 +92,7 @@ export function HomePage() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-petrol-950 via-petrol-950/90 to-petrol-950/60" />
           <div className="absolute inset-0 bg-gradient-to-t from-petrol-950 via-transparent to-petrol-950/60" />
-          
+
           {/* Subtle Grid overlay */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem]" />
 
@@ -103,10 +103,10 @@ export function HomePage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-            
+
             {/* Left Content Area */}
             <div className="lg:col-span-7 flex flex-col gap-6">
-              
+
               {/* Rotating Statement Badge */}
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xs bg-gold-500/10 border border-gold-500/30 text-gold-400 max-w-fit shadow-[0_0_15px_rgba(214,158,46,0.15)]">
                 <Sparkles className="w-3.5 h-3.5 text-gold-400" />
@@ -144,9 +144,8 @@ export function HomePage() {
                       key={idx}
                       type="button"
                       onClick={() => setCurrentSlide(idx)}
-                      className={`relative h-2 rounded-full overflow-hidden transition-all duration-300 ${
-                        isActive ? 'w-10 bg-white/20' : 'w-2.5 bg-white/20 hover:bg-white/40'
-                      }`}
+                      className={`relative h-2 rounded-full overflow-hidden transition-all duration-300 ${isActive ? 'w-10 bg-white/20' : 'w-2.5 bg-white/20 hover:bg-white/40'
+                        }`}
                       aria-label={`Go to slide ${idx + 1}`}
                     >
                       {isActive && (
@@ -194,7 +193,7 @@ export function HomePage() {
                 </div>
                 <div className="p-3 bg-white/[0.04] border border-white/10 backdrop-blur-md rounded-xs hover:border-gold-500/40 transition-colors">
                   <div className="text-xs font-mono font-bold text-gold-400">STK Partner</div>
-                  <div className="text-[11px] text-slate-300">Sanitary Equipment</div>
+                  <div className="text-[11px] text-slate-300">  Equipment</div>
                 </div>
                 <div className="hidden sm:block p-3 bg-white/[0.04] border border-white/10 backdrop-blur-md rounded-xs hover:border-gold-500/40 transition-colors">
                   <div className="text-xs font-mono font-bold text-gold-400">Vendor Neutral</div>
@@ -211,7 +210,7 @@ export function HomePage() {
                 <div className="relative aspect-[16/10] sm:aspect-[16/9] w-full bg-black overflow-hidden rounded-xs">
                   <iframe
                     src="https://www.youtube.com/embed/pDseoVMag3Q?rel=0&modestbranding=1"
-                    title="AM Tradings Turnkey Dairy Processing &amp; Sanitary Machinery"
+                    title="AM Tradings Turnkey Dairy Processing &amp; Machinery"
                     className="w-full h-full border-0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
@@ -248,17 +247,17 @@ export function HomePage() {
       <section className="py-20 bg-white border-b border-petrol-900/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
+
             <div className="lg:col-span-6 flex flex-col gap-6">
               <SectionHeading
                 badge="Company Overview"
-                title="Industrial Engineering & Strategic Dairy Consultancy"
+                title="Technical Advisory & Strategic Dairy Consultancy"
                 subtitle="Bridging the gap between raw agro-commodities and world-class commercial dairy manufacturing."
               />
 
               <div className="prose prose-slate text-sm text-slate-700 space-y-4">
                 <p className="leading-relaxed">
-                  <strong>AM Tradings &amp; Consultants</strong> is a premier Pakistani corporate entity operating across two unified divisions: <em>Turnkey Dairy &amp; Food Engineering Consultancy</em> and <em>Sanitary Machinery Trading</em>.
+                  <strong>AM Tradings &amp; Consultants</strong> is a premier Pakistani corporate entity operating across specialized divisions: <em>Technical Advisory &amp; Industry Insights</em>, <em>Engineering Advisory</em>, and <em>Business Advisory &amp; Machinery Trading</em>.
                 </p>
                 <p className="leading-relaxed">
                   Headed by <strong>Dr. Asif Iftikhar</strong>, we provide end-to-end advisory for investors and existing processors—from initial feasibility modeling and 3D hygienic plant zoning to international machinery procurement, recipe formulation, and Punjab Food Authority (PFA) audit compliance.
@@ -274,7 +273,7 @@ export function HomePage() {
                     Machinery &amp; Trading
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Official STK sanitary processing lines, UHT sterilizers, homogenizers, plate pasteurizers, and aseptic packaging.
+                    Official STK processing lines, UHT sterilizers, homogenizers, plate pasteurizers, and aseptic packaging.
                   </p>
                 </div>
 
@@ -286,7 +285,7 @@ export function HomePage() {
                     Greenfield Advisory
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    8-stage structured engineering lifecycle, CAPEX audits, sanitary orbital piping supervision, and live water trials.
+                    8-stage structured advisory lifecycle, CAPEX audits, orbital piping supervision, and live water trials.
                   </p>
                 </div>
               </div>
@@ -311,7 +310,7 @@ export function HomePage() {
                 />
                 <div className="p-4 bg-petrol-900 text-white rounded-b-xs">
                   <span className="text-[11px] font-mono text-gold-400 uppercase tracking-wider block mb-1">
-                    Structured Engineering Framework
+                    Structured Advisory Framework
                   </span>
                   <h4 className="text-sm font-display font-bold">
                     The 8-Stage Turnkey Plant Development Lifecycle
@@ -338,7 +337,7 @@ export function HomePage() {
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-            
+
             {/* Vision Card */}
             <div className="p-8 bg-white border border-petrol-900/10 rounded-sm shadow-sm flex flex-col justify-between">
               <div>
@@ -372,7 +371,7 @@ export function HomePage() {
                   Our Mission
                 </span>
                 <h3 className="text-xl font-display font-bold text-white mb-4">
-                  Turnkey Engineering &amp; Trust
+                  Turnkey Advisory &amp; Trust
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed">
                   {company.mission}
@@ -395,7 +394,7 @@ export function HomePage() {
                   Core Values
                 </span>
                 <h3 className="text-xl font-display font-bold text-petrol-900 mb-4">
-                  Engineering Integrity
+                  Technical Advisory Integrity
                 </h3>
                 <ul className="space-y-3">
                   {(company.coreValues || company.values || []).map((val, idx) => (
@@ -462,7 +461,7 @@ export function HomePage() {
           <SectionHeading
             badge="Industrial Showcase"
             title="Plant Operations &amp; Machinery"
-            subtitle="Operational overview of sanitary cheese processing lines, high-pressure homogenizers, and Clean-In-Place automation."
+            subtitle="Operational overview of cheese processing lines, high-pressure homogenizers, and Clean-In-Place automation."
             variant="dark"
             align="center"
           />
@@ -499,7 +498,7 @@ export function HomePage() {
       {/* 8. FINAL ENQUIRY CTA BANNER */}
       <section className="py-20 bg-petrol-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem]" />
-        
+
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center gap-6">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-gold-500/10 border border-gold-500/30 text-gold-400 rounded-xs text-xs font-mono font-bold uppercase tracking-widest">
             Direct Technical Engagement
@@ -510,7 +509,7 @@ export function HomePage() {
           </h2>
 
           <p className="text-base text-slate-300 font-sans max-w-2xl leading-relaxed">
-            Connect directly with Dr. Asif Iftikhar and the AM Tradings engineering directorate for an uncompromised, vendor-neutral evaluation of your dairy processing investment, CAPEX tender, or machinery sourcing needs.
+            Connect directly with Dr. Asif Iftikhar and the AM Tradings advisory leadership for an uncompromised, vendor-neutral evaluation of your dairy processing investment, CAPEX tender, or machinery sourcing needs.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">

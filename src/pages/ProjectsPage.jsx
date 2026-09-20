@@ -39,7 +39,7 @@ export function ProjectsPage() {
               Our Projects &amp; Advisory Engagements
             </h1>
             <p className="text-base sm:text-lg text-slate-300 font-sans leading-relaxed">
-              Demonstrated engineering execution across Greenfield dairy facilities, plant expansions, recipe formulation R&amp;D, and international agro-consulting.
+              Demonstrated advisory leadership across Greenfield dairy facilities, plant expansions, recipe formulation R&amp;D, and international agro-consulting.
             </p>
           </div>
         </div>

@@ -15,7 +15,7 @@ export const showcaseVideos = [
     description: 'Comprehensive operational footage of an automated turnkey dairy processing plant, featuring raw milk intake, HTST pasteurization, high-pressure homogenization, and automated storage silos in full commercial throughput.',
     highlights: [
       'Multi-stage thermal processing hall in active operation',
-      'Automated sanitary valve manifold matrix in live switching sequence',
+      'Automated mix-proof valve manifold matrix in live switching sequence',
       'SCADA centralized control room monitoring pressure, flow, and temperature',
     ],
     featuredInHero: true,
@@ -27,17 +27,17 @@ export const showcaseVideos = [
     duration: '02:30',
     thumbnail: '/images/machinery/cheese-vat-curd.jpg',
     videoUrl: '',
-    description: 'Detailed mechanical run of sanitary enclosed cheese vats featuring bidirectional curd cutting knives, automated whey separation, and curd block molding press.',
+    description: 'Detailed mechanical run of enclosed cheese vats featuring bidirectional curd cutting knives, automated whey separation, and curd block molding press.',
     highlights: [
       'Precision planetary cutting knives achieving uniform curd grain size',
       'Automated jacket heating and hot-water circulation control',
-      'Sanitary CIP spray validation post-production cycle',
+      'Automated CIP spray validation post-production cycle',
     ],
     featuredInHero: false,
   },
   {
     id: 'homogenizer-showcase',
-    title: 'High-Pressure Sanitary Homogenization in Live Operation',
+    title: 'High-Pressure Homogenization in Live Operation',
     category: 'Mechanical Engineering',
     duration: '01:55',
     thumbnail: '/images/machinery/homogenizer-high-pressure.jpg',
@@ -53,11 +53,11 @@ export const showcaseVideos = [
   {
     id: 'cip-automation-showcase',
     title: 'Automated Multi-Loop Clean-In-Place (CIP) System Cycle',
-    category: 'Plant Sanitation',
+    category: 'Plant CIP & Cleaning',
     duration: '02:15',
     thumbnail: '/images/machinery/cip-cleaning-system.jpg',
     videoUrl: '',
-    description: 'Automated 5-step Clean-In-Place sequence in progress: Pre-Rinse, Caustic Acid Wash, Inter-Rinse, Nitric Acid Sanitization, and Final Microbiological Rinse with inline conductivity verification.',
+    description: 'Automated 5-step Clean-In-Place sequence in progress: Pre-Rinse, Caustic Acid Wash, Inter-Rinse, Nitric Acid Wash, and Final Microbiological Rinse with inline conductivity verification.',
     highlights: [
       'PID-controlled chemical dosing and heating loop accuracy',
       'Zero dead-leg return scavenging pumps preventing air entrapment',

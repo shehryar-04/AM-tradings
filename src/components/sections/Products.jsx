@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { 
-  Flame, 
-  RotateCw, 
-  UtensilsCrossed, 
-  Sparkles, 
-  Check, 
-  ArrowUpRight, 
-  FileText 
+import {
+  Flame,
+  RotateCw,
+  UtensilsCrossed,
+  Sparkles,
+  Check,
+  ArrowUpRight,
+  FileText
 } from 'lucide-react';
 import { company, getWhatsAppUrl } from '../../data/company';
 import { SectionHeading } from '../ui/SectionHeading';
@@ -28,7 +28,7 @@ export function Products() {
         <SectionHeading
           eyebrow="Equipment Sourcing &amp; Integration"
           title="Industrial Machinery &amp; Processing Lines"
-          subtitle="Independent, vendor-neutral procurement and line integration across global sanitary manufacturing standards (3A / EHEDG / ISO)."
+          subtitle="Independent, vendor-neutral procurement and line integration across global hygienic manufacturing standards (3A / EHEDG / ISO)."
         />
 
         {/* Category Tabs */}
@@ -66,7 +66,7 @@ export function Products() {
                       0{idx + 1}
                     </span>
                     <span className="text-[10px] font-mono text-slate-400 uppercase tracking-widest">
-                      Sanitary SS316L / SS304
+                      SS316L / SS304
                     </span>
                   </div>
 

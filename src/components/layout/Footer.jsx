@@ -74,7 +74,7 @@ export function Footer() {
               <li>Tender &amp; Vendor Neutral Audit</li>
               <li>Dairy Recipe &amp; Formulation R&amp;D</li>
               <li>Hygienic 3D Plant Layout &amp; Zoning</li>
-              <li>Sanitary Process Piping &amp; Automation</li>
+              <li>Hygienic Process Piping &amp; Automation</li>
               <li>QA Laboratory Setup &amp; PFA Compliance</li>
               <li>Genuine Spare Parts Sourcing</li>
             </ul>

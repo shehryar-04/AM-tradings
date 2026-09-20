@@ -23,7 +23,7 @@ export function ContactPage() {
     organization: '',
     email: '',
     phone: '',
-    serviceCategory: 'Greenfield Dairy Plant Engineering',
+    serviceCategory: 'Greenfield Dairy Plant Technical Advisory',
     message: '',
   });
 
@@ -39,11 +39,11 @@ export function ContactPage() {
   };
 
   const enquiryTopics = [
-    'Greenfield Dairy Plant Engineering',
+    'Greenfield Dairy Plant Technical Advisory',
     'Machinery RFQ & STK Equipment',
     'Independent Tender & CAPEX Audit',
     'Recipe Formulation & R&D',
-    'Sanitary Piping & Commissioning',
+    'Hygienic Piping & Commissioning',
     'QA Testing Laboratory Setup',
     'Genuine Spare Parts Sourcing',
     'General Corporate Inquiry',
@@ -51,11 +51,11 @@ export function ContactPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-ivory-100 pt-24 pb-20">
-      
+
       {/* Header Banner */}
       <section className="bg-petrol-950 text-white py-16 lg:py-20 border-b border-petrol-900/20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem]" />
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-gold-500/10 border border-gold-500/30 text-gold-400 rounded-xs text-xs font-mono font-bold uppercase tracking-widest mb-4">
@@ -65,7 +65,7 @@ export function ContactPage() {
               Contact &amp; Project Inquiries
             </h1>
             <p className="text-base sm:text-lg text-slate-300 font-sans leading-relaxed">
-              Connect directly with Dr. Asif Iftikhar and the AM Tradings engineering directorate for plant consultations, equipment RFQs, and tender reviews.
+              Connect directly with Dr. Asif Iftikhar and the AM Tradings advisory leadership for plant consultations, equipment RFQs, and tender reviews.
             </p>
           </div>
         </div>
@@ -75,14 +75,14 @@ export function ContactPage() {
       <section className="py-20 bg-ivory-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            
+
             {/* Left Column: Form */}
             <div className="lg:col-span-7 bg-white p-8 sm:p-10 border border-petrol-900/10 rounded-sm shadow-sm">
               <span className="text-xs font-mono font-bold uppercase tracking-widest text-gold-700 block mb-1">
                 Project RFP Form
               </span>
               <h2 className="text-2xl font-display font-bold text-petrol-900 mb-2">
-                Submit an Engineering Inquiry
+                Submit a Consultation Inquiry
               </h2>
               <p className="text-xs text-slate-600 mb-8 leading-relaxed">
                 Provide your project parameters below. Submissions connect directly to our senior advisory desk.
@@ -217,7 +217,7 @@ export function ContactPage() {
 
             {/* Right Column: Direct Contact & Office Details */}
             <div className="lg:col-span-5 flex flex-col gap-6">
-              
+
               {/* Direct Advisory Contact */}
               <div className="p-7 bg-petrol-900 text-white rounded-sm shadow-md">
                 <span className="text-[10px] font-mono text-gold-400 uppercase tracking-widest block mb-1">
