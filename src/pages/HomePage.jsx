@@ -35,6 +35,7 @@ import { TestimonialCard } from '../components/ui/TestimonialCard';
 import { WhatsAppButton, WhatsAppIcon } from '../components/ui/WhatsAppButton';
 import { SectionHeading } from '../components/ui/SectionHeading';
 import { Reveal } from '../components/ui/Reveal';
+import { WellnessInitiative } from '../components/sections/WellnessInitiative';
 
 export function HomePage() {
   const [selectedVideo, setSelectedVideo] = useState(null);
@@ -51,7 +52,7 @@ export function HomePage() {
     {
       badge: 'Engineering & Feasibility Consultancy',
       title: 'Turnkey Greenfield Dairy & Food Processing Plants',
-      subtitle: 'From 3D architectural master planning to live-milk commissioning led by Dr. Munib Siddiqui.',
+      subtitle: 'From 3D architectural master planning to live-milk commissioning led by Dr. Asif Iftikhar.',
       tag: 'Independent Vendor-Neutral Audits',
     },
     {
@@ -61,9 +62,9 @@ export function HomePage() {
       tag: 'High-Yield Chemistry',
     },
     {
-      badge: 'International Partnerships',
-      title: 'Strategic MOUs with STK & South Korean Tech',
-      subtitle: 'Connecting Pakistani agro-industrial investors with global sanitary machinery manufacturers.',
+      badge: 'Strategic Innovation',
+      title: 'AM Wellness Initiative & Global Partnerships',
+      subtitle: 'Connecting Pakistani agro-industrial investors with advanced food science and sanitary machinery.',
       tag: 'Global Technology Transfer',
     },
   ];
@@ -260,7 +261,7 @@ export function HomePage() {
                   <strong>AM Tradings &amp; Consultants</strong> is a premier Pakistani corporate entity operating across two unified divisions: <em>Turnkey Dairy &amp; Food Engineering Consultancy</em> and <em>Sanitary Machinery Trading</em>.
                 </p>
                 <p className="leading-relaxed">
-                  Headed by <strong>Dr. Munib Siddiqui</strong>, we provide end-to-end advisory for investors and existing processors—from initial feasibility modeling and 3D hygienic plant zoning to international machinery procurement, recipe formulation, andPunjab Food Authority (PFA) audit compliance.
+                  Headed by <strong>Dr. Asif Iftikhar</strong>, we provide end-to-end advisory for investors and existing processors—from initial feasibility modeling and 3D hygienic plant zoning to international machinery procurement, recipe formulation, and Punjab Food Authority (PFA) audit compliance.
                 </p>
               </div>
 
@@ -424,12 +425,12 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Compliance & Credentials"
-            title="Official Registrations, Licenses &amp; MOUs"
-            subtitle="Verified statutory incorporation, chamber membership, tax registrations, and international manufacturer partnerships."
+            title="Official Registrations &amp; Statutory Affiliations"
+            subtitle="Verified statutory incorporation, chamber membership, and tax compliance registrations."
             align="center"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
             {certificates.map((cert) => (
               <CertificateCard key={cert.id} certificate={cert} cert={cert} />
             ))}
@@ -439,7 +440,7 @@ export function HomePage() {
             <div className="flex items-center gap-3">
               <FileCheck className="w-6 h-6 text-gold-600 flex-shrink-0" />
               <p className="text-xs text-slate-700">
-                Full statutory documentation packs and bilateral MOUs are available upon formal tender audit request.
+                Full statutory documentation packs are available upon formal tender audit request.
               </p>
             </div>
             <Link
@@ -452,7 +453,10 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* 5. PLANT & MACHINERY SHOWCASE */}
+      {/* 5. AM WELLNESS INITIATIVE (NUTREW) */}
+      <WellnessInitiative />
+
+      {/* 6. PLANT & MACHINERY SHOWCASE */}
       <section className="py-20 bg-petrol-950 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
@@ -474,17 +478,17 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* 6. TESTIMONIALS & INDUSTRY ENDORSEMENTS */}
+      {/* 7. REVIEWS & SECTOR FEEDBACK */}
       <section className="py-20 bg-ivory-100 border-b border-petrol-900/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Client Endorsements"
-            title="Stakeholder Records &amp; Feedback"
-            subtitle="Observations from industrial project directors, operations heads, and agro-food ventures."
+            title="Sector Feedback &amp; Reviews"
+            subtitle="Operational feedback and performance observations across diverse agro-industrial processing sectors."
             align="center"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {testimonials.map((item) => (
               <TestimonialCard key={item.id} item={item} />
             ))}
@@ -492,7 +496,7 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* 7. FINAL ENQUIRY CTA BANNER */}
+      {/* 8. FINAL ENQUIRY CTA BANNER */}
       <section className="py-20 bg-petrol-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem]" />
         
@@ -506,14 +510,14 @@ export function HomePage() {
           </h2>
 
           <p className="text-base text-slate-300 font-sans max-w-2xl leading-relaxed">
-            Connect directly with Dr. Munib Siddiqui for an uncompromised, vendor-neutral evaluation of your dairy processing investment, CAPEX tender, or machinery sourcing needs.
+            Connect directly with Dr. Asif Iftikhar and the AM Tradings engineering directorate for an uncompromised, vendor-neutral evaluation of your dairy processing investment, CAPEX tender, or machinery sourcing needs.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
             <WhatsAppButton
               size="lg"
               variant="whatsapp"
-              message="Hello Dr. Munib, I would like to schedule a project consultation with AM Tradings."
+              message="Hello Dr. Asif Iftikhar / AM Tradings Team, I would like to schedule a project consultation with AM Tradings."
               className="px-8"
             >
               WhatsApp: {company.contacts.whatsapp}

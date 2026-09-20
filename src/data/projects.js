@@ -46,7 +46,7 @@ export const projects = [
       'Automated Multi-Channel Clean-In-Place (CIP) Station',
     ],
     consultancyInvolvement: [
-      'Principal Consultant: Dr. Munib Siddiqui',
+      'Principal Consultant: Dr. Asif Iftikhar',
       'Mass-balance and thermal energy recovery calculations',
       'Standardized liquid milk, pasteurized pouch, and cultured product formulations',
       'Staff standard operating procedures (SOPs) & operator training modules',
@@ -90,7 +90,7 @@ export const projects = [
       'Plate Heat Exchanger Regasketing & Thermal Expansion Plates',
     ],
     consultancyInvolvement: [
-      'Process optimization audit by Dr. Munib Siddiqui',
+      'Process optimization audit by Dr. Asif Iftikhar',
       'Cream yield harvesting optimization (residual fat ≤ 0.04% in skim milk)',
       'Sanitary piping modifications and hygienic zoning remediation',
       'Laboratory testing verification against Punjab Food Authority standards',
@@ -134,7 +134,7 @@ export const projects = [
       'QA Laboratory Instrumentation Specification List',
     ],
     consultancyInvolvement: [
-      'Lead Technical Advisor: Dr. Munib Siddiqui',
+      'Lead Technical Advisor: Dr. Asif Iftikhar',
       'Overseas manufacturer contract negotiation and warranty protection clauses',
       'Recombined milk and stabilized dairy dessert formulation chemistry',
       'Executive investor presentations and board-level risk mitigation',

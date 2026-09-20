@@ -56,7 +56,7 @@ export function GreenfieldStages() {
             <WhatsAppButton
               size="sm"
               variant="gold"
-              message="Hello Dr. Munib, I am planning a Greenfield Dairy Plant and want to review Stage 1 Feasibility."
+              message="Hello Dr. Asif Iftikhar / AM Tradings Team, I am planning a Greenfield Dairy Plant and want to review Stage 1 Feasibility."
               className="whitespace-nowrap flex-shrink-0 text-xs"
             >
               Consult On Stage 1
@@ -170,7 +170,7 @@ export function GreenfieldStages() {
                   <WhatsAppButton
                     variant="whatsapp"
                     size="sm"
-                    message={`Hello Dr. Munib, I want to inquire about executing ${currentStage.phase}: ${currentStage.title} for our dairy project.`}
+                    message={`Hello Dr. Asif Iftikhar / AM Tradings Team, I want to inquire about executing ${currentStage.phase}: ${currentStage.title} for our dairy project.`}
                     className="whitespace-nowrap flex-shrink-0"
                   >
                     Inquire On {currentStage.phase}

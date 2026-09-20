@@ -30,7 +30,7 @@ export function WhyUs() {
     },
     {
       title: "Scientific Recipe Engineering Included",
-      description: "A state-of-the-art plant is useless without stable, great-tasting product formulas. Led by Dr. Munib Siddiqui, we formulate milk, yogurt, and cheese recipes that achieve optimal yield and shelf life.",
+      description: "A state-of-the-art plant is useless without stable, great-tasting product formulas. Led by Dr. Asif Iftikhar, we formulate milk, yogurt, and cheese recipes that achieve optimal yield and shelf life.",
       icon: Cpu,
       badge: "Dairy Science",
     },

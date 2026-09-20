@@ -113,7 +113,7 @@ export function BusinessAreas() {
               <WhatsAppButton
                 variant="gold"
                 size="sm"
-                message="Hello Dr. Munib, I would like to inquire about your full 7-Pillar Turnkey Consulting Services."
+                message="Hello Dr. Asif Iftikhar / AM Tradings Team, I would like to inquire about your full 7-Pillar Turnkey Consulting Services."
                 className="w-full justify-center text-xs"
               >
                 Inquire on All Pillars
@@ -188,7 +188,7 @@ export function BusinessAreas() {
                 <WhatsAppButton
                   variant="whatsapp"
                   size="sm"
-                  message={`Hello Dr. Munib, I am interested in discussing Pillar ${selectedCapability.number}: ${selectedCapability.title} for our facility.`}
+                  message={`Hello Dr. Asif Iftikhar / AM Tradings Team, I am interested in discussing Pillar ${selectedCapability.number}: ${selectedCapability.title} for our facility.`}
                 >
                   Discuss {selectedCapability.title}
                 </WhatsAppButton>

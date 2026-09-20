@@ -155,7 +155,7 @@ export function CertificateCard({ certificate, cert }) {
                   <WhatsAppButton
                     variant="whatsapp"
                     size="sm"
-                    message={`Hello Dr. Munib, I am reviewing the official "${data.title}" on the AM Tradings portal and would like to initiate a formal business discussion.`}
+                    message={`Hello Dr. Asif Iftikhar / AM Tradings Team, I am reviewing the official "${data.title}" on the AM Tradings portal and would like to initiate a formal business discussion.`}
                   >
                     Inquire Regarding Tender Credentials
                   </WhatsAppButton>

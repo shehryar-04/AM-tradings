@@ -81,7 +81,7 @@ export function About() {
                   In the rapidly modernizing food and beverage sector of Pakistan, setting up a dairy processing plant requires more than purchasing machinery. It requires accurate mass-balance engineering, hygienic zoning compliance, vendor-neutral procurement audits, and certified recipe formulation.
                 </p>
                 <p>
-                  Under the technical leadership of <strong>Dr. Munib Siddiqui</strong>, AM Tradings provides full-lifecycle advisory—ensuring that every rupee of capital expenditure translates into reliable throughput, minimal product loss, and highest market shelf-life.
+                  Under the technical leadership of <strong>Dr. Asif Iftikhar</strong>, AM Tradings provides full-lifecycle advisory—ensuring that every rupee of capital expenditure translates into reliable throughput, minimal product loss, and highest market shelf-life.
                 </p>
               </div>
             </Reveal>
@@ -115,9 +115,9 @@ export function About() {
                 <WhatsAppButton
                   variant="whatsapp"
                   size="md"
-                  message="Hello Dr. Munib, I would like to schedule a private advisory consultation on our dairy facility plans."
+                  message="Hello Dr. Asif Iftikhar / AM Tradings Team, I would like to schedule a private advisory consultation on our dairy facility plans."
                 >
-                  Consult Dr. Munib Siddiqui
+                  Consult Dr. Asif Iftikhar
                 </WhatsAppButton>
 
                 <Button

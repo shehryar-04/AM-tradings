@@ -52,7 +52,7 @@ export function ServicesPage() {
         'Thermal & mass energy balance modeling',
         'Punjab Food Authority (PFA) audit compliance',
       ],
-      whatsappMsg: 'Hello Dr. Munib, I would like to inquire about Greenfield Plant Engineering consultancy for our project.',
+      whatsappMsg: 'Hello Dr. Asif Iftikhar, I would like to inquire about Greenfield Plant Engineering consultancy for our project.',
     },
     {
       id: 'tender-audit',
@@ -66,21 +66,21 @@ export function ServicesPage() {
         'Direct OEM price negotiations & scope de-risking',
         'Utility consumption and life-cycle cost analysis',
       ],
-      whatsappMsg: 'Hello Dr. Munib, I would like to request an independent Tender & Machinery Audit for our upcoming procurement.',
+      whatsappMsg: 'Hello Dr. Asif Iftikhar, I would like to request an independent Tender & Machinery Audit for our upcoming procurement.',
     },
     {
       id: 'recipe-rnd',
       title: 'Recipe Formulation & Dairy Chemistry R&D',
       icon: FlaskConical,
       scope: 'Product Development',
-      description: 'Scientific formulation for UHT milk, pasteurized milk, cheese, yogurt, flavored dairy, and cream. Led by Dr. Munib Siddiqui.',
+      description: 'Scientific formulation for UHT milk, pasteurized milk, cheese, yogurt, flavored dairy, and cream. Led by Dr. Asif Iftikhar.',
       deliverables: [
         'Formulation chemistry & SNF/fat ratio balancing',
         'Thermal stability and extended shelf life protocols',
         'Sensory profiling and texture optimization',
         'Pilot batch bench testing and live plant translation',
       ],
-      whatsappMsg: 'Hello Dr. Munib, I would like to discuss recipe formulation and product R&D for our dairy line.',
+      whatsappMsg: 'Hello Dr. Asif Iftikhar, I would like to discuss recipe formulation and product R&D for our dairy line.',
     },
     {
       id: 'piping-commissioning',
@@ -94,7 +94,7 @@ export function ServicesPage() {
         '5-stage CIP cycle flow and conductivity verification',
         'First-batch commercial yield and microbial sign-off',
       ],
-      whatsappMsg: 'Hello Dr. Munib, I need expert supervision for sanitary piping installation and plant commissioning.',
+      whatsappMsg: 'Hello Dr. Asif Iftikhar, I need expert supervision for sanitary piping installation and plant commissioning.',
     },
     {
       id: 'qa-lab',
@@ -108,7 +108,7 @@ export function ServicesPage() {
         'Standard Operating Procedures (SOP) manuals',
         'Quality control staff training and certification',
       ],
-      whatsappMsg: 'Hello Dr. Munib, I would like to set up a QA testing laboratory and need technical SOP consulting.',
+      whatsappMsg: 'Hello Dr. Asif Iftikhar, I would like to set up a QA testing laboratory and need technical SOP consulting.',
     },
     {
       id: 'spare-parts',
@@ -122,7 +122,7 @@ export function ServicesPage() {
         'Sanitary mechanical seals and impeller kits',
         'Aseptic diaphragm valves and solenoid coils',
       ],
-      whatsappMsg: 'Hello Dr. Munib, I need to source genuine sanitary spare parts for our dairy processing equipment.',
+      whatsappMsg: 'Hello Dr. Asif Iftikhar, I need to source genuine sanitary spare parts for our dairy processing equipment.',
     },
   ];
 
@@ -325,7 +325,7 @@ export function ServicesPage() {
               </p>
             </div>
             <a
-              href={getWhatsAppUrl("Hello Dr. Munib, I would like to request a custom machinery configuration and quotation.")}
+              href={getWhatsAppUrl("Hello Dr. Asif Iftikhar / AM Tradings Team, I would like to request a custom machinery configuration and quotation.")}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-400 text-petrol-950 text-xs font-mono font-bold uppercase tracking-wider rounded-xs whitespace-nowrap shadow-md transition-colors"

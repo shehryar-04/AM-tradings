@@ -87,7 +87,7 @@ export function Footer() {
             </h3>
             <div className="flex flex-col gap-3 text-xs">
               <a
-                href={getWhatsAppUrl("Hello Dr. Munib, I am contacting you from the AM Tradings website.")}
+                href={getWhatsAppUrl("Hello Dr. Asif Iftikhar / AM Tradings Team, I am contacting you from the AM Tradings website.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2.5 text-slate-200 hover:text-[#25D366] transition-colors font-medium"

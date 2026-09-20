@@ -46,7 +46,7 @@ export function ProjectDetailPage() {
     );
   }
 
-  const whatsappInquiryMessage = `Hello Dr. Munib, I am reviewing the ${project.title} dossier and would like to discuss a similar project scope.`;
+  const whatsappInquiryMessage = `Hello Dr. Asif Iftikhar / AM Tradings Team, I am reviewing the ${project.title} dossier and would like to discuss a similar project scope.`;
 
   return (
     <div className="flex flex-col min-h-screen bg-ivory-100 pt-24 pb-20">
@@ -244,7 +244,7 @@ export function ProjectDetailPage() {
                   Planning a Similar Project?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Engage Dr. Munib Siddiqui directly for an independent technical consultation, tender audit, or feasibility review.
+                  Engage Dr. Asif Iftikhar directly for an independent technical consultation, tender audit, or feasibility review.
                 </p>
 
                 <a
@@ -254,7 +254,7 @@ export function ProjectDetailPage() {
                   className="inline-flex items-center justify-center gap-2 py-3 px-4 bg-petrol-900 hover:bg-gold-600 text-gold-400 hover:text-petrol-950 text-xs font-mono font-bold uppercase tracking-wider rounded-xs transition-colors"
                 >
                   <WhatsAppIcon className="w-4 h-4" />
-                  <span>Consult Dr. Munib</span>
+                  <span>Consult Dr. Asif</span>
                 </a>
 
                 <Link

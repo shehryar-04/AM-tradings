@@ -84,7 +84,7 @@ export function Products() {
                     Turnkey Sourcing &amp; Commissioning
                   </span>
                   <a
-                    href={getWhatsAppUrl(`Hello Dr. Munib, I would like to inquire about specifications and pricing for: ${item.name}.`)}
+                    href={getWhatsAppUrl(`Hello Dr. Asif Iftikhar / AM Tradings Team, I would like to inquire about specifications and pricing for: ${item.name}.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-xs font-semibold text-petrol-900 hover:text-gold-700 flex items-center gap-1"
@@ -116,7 +116,7 @@ export function Products() {
             <WhatsAppButton
               variant="gold"
               size="md"
-              message="Hello Dr. Munib, I would like to initiate an international machinery tender evaluation for our plant."
+              message="Hello Dr. Asif Iftikhar / AM Tradings Team, I would like to initiate an international machinery tender evaluation for our plant."
               className="flex-shrink-0"
             >
               Request Equipment Tender Review

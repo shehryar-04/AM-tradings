@@ -65,7 +65,7 @@ export function ContactPage() {
               Contact &amp; Project Inquiries
             </h1>
             <p className="text-base sm:text-lg text-slate-300 font-sans leading-relaxed">
-              Connect directly with Dr. Munib Siddiqui and the AM Tradings engineering directorate for plant consultations, equipment RFQs, and tender reviews.
+              Connect directly with Dr. Asif Iftikhar and the AM Tradings engineering directorate for plant consultations, equipment RFQs, and tender reviews.
             </p>
           </div>
         </div>
@@ -97,7 +97,7 @@ export function ContactPage() {
                     Inquiry Initiated
                   </h3>
                   <p className="text-xs text-slate-600 mb-6 max-w-sm mx-auto">
-                    Your parameters have been formatted. Our direct WhatsApp portal has opened to establish immediate technical contact with Dr. Munib Siddiqui.
+                    Your parameters have been formatted. Our direct WhatsApp portal has opened to establish immediate technical contact with Dr. Asif Iftikhar.
                   </p>
                   <button
                     type="button"
@@ -205,7 +205,7 @@ export function ContactPage() {
                     className="w-full inline-flex items-center justify-center gap-2 py-4 px-6 bg-petrol-900 hover:bg-gold-600 text-gold-400 hover:text-petrol-950 text-xs font-mono font-bold uppercase tracking-widest rounded-xs shadow-md transition-colors duration-200"
                   >
                     <Send className="w-4 h-4" />
-                    <span>Transmit RFP to Dr. Munib Siddiqui</span>
+                    <span>Transmit RFP to Dr. Asif Iftikhar</span>
                   </button>
 
                   <p className="text-[11px] text-slate-500 text-center font-mono">
@@ -224,15 +224,15 @@ export function ContactPage() {
                   Principal Advisory Desk
                 </span>
                 <h3 className="text-xl font-display font-bold text-white mb-2">
-                  Dr. Munib Siddiqui
+                  Dr. Asif Iftikhar
                 </h3>
                 <p className="text-xs text-slate-300 font-mono mb-6">
-                  Principal Dairy Consultant &amp; Technical Director
+                  Principal Dairy Consultant and CEO of the firm
                 </p>
 
                 <div className="space-y-4 text-xs font-mono">
                   <a
-                    href={getWhatsAppUrl("Hello Dr. Munib, I am contacting you directly from the AM Tradings website.")}
+                    href={getWhatsAppUrl("Hello Dr. Asif Iftikhar, I am contacting you directly from the AM Tradings website.")}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-3 bg-white/10 hover:bg-white/15 rounded-xs text-slate-200 hover:text-white transition-colors border border-white/10"

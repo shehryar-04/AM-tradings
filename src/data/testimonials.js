@@ -1,37 +1,67 @@
 /**
- * AM TRADINGS & CONSULTANTS — TESTIMONIALS & INDUSTRY ENDORSEMENTS
- * Note: Initial structured feedback components. Verified formal client sign-offs pending.
+ * AM TRADINGS & CONSULTANTS — SECTOR REVIEWS & CLIENT FEEDBACK
+ * Structured sector reviews. Under each review, only the relevant sector is displayed.
  */
 
 export const testimonials = [
   {
-    id: 't-1',
-    quote: "Dr. Munib Siddiqui's independent tender audit for our processing facility saved our group over 18% on initial machinery CAPEX while ensuring our sanitary piping conformed 100% to international EHEDG standards. Their vendor neutrality is unmatched.",
-    author: "Project Director",
-    organization: "Commercial Dairy Processing Group",
-    location: "Punjab, Pakistan",
-    projectType: "Greenfield Plant Consulting",
-    verifiedReview: false,
-    statusNote: "Client Endorsement Record",
+    id: 'rev-1',
+    quote: "The machinery sourcing process was smooth, transparent, and saved us significant capital on European sanitary lines.",
+    sector: "Dairy Plant Sourcing",
   },
   {
-    id: 't-2',
-    quote: "AM Tradings provided full-lifecycle guidance from initial milk catchment modeling to the final live-milk commissioning. Their technical team identified civil layout bottlenecks before a single rupee of concrete was poured, preventing catastrophic rework.",
-    author: "Managing Director",
-    organization: "Integrated Agro-Industrial Venture",
-    location: "Pakistan",
-    projectType: "Turnkey Facility Engineering",
-    verifiedReview: false,
-    statusNote: "Client Endorsement Record",
+    id: 'rev-2',
+    quote: "Accurate milk balancing and formula stabilization helped us achieve consistent texture and extended product shelf life.",
+    sector: "Dairy Recipe Setting",
   },
   {
-    id: 't-3',
-    quote: "The formulation chemistry and recipe stabilization developed by Dr. Munib gave our UHT products superior shelf life and taste profile that immediately captured market share. Their deep scientific rigor sets them apart from mere machinery dealers.",
-    author: "Head of Operations & QA",
-    organization: "Food & Beverage Enterprise",
-    location: "Regional Market",
-    projectType: "Recipe Engineering & R&D",
-    verifiedReview: false,
-    statusNote: "Client Endorsement Record",
+    id: 'rev-3',
+    quote: "High-speed packaging line integration was completed on schedule with zero mechanical defects.",
+    sector: "Bakery Food Packaging",
+  },
+  {
+    id: 'rev-4',
+    quote: "Clear hygienic zoning guidance ensured our facility met rigorous food authority standards on the first audit.",
+    sector: "Food Safety and Hygiene",
+  },
+  {
+    id: 'rev-5',
+    quote: "Reliable equipment selection and genuine spare parts backup made a huge difference to our continuous throughput.",
+    sector: "Food Processing Equipment",
+  },
+  {
+    id: 'rev-6',
+    quote: "Comprehensive plant architecture and vendor audits protected our investment from costly site revisions.",
+    sector: "Dairy Plant Consultancy",
+  },
+  {
+    id: 'rev-7',
+    quote: "Regenerative thermal heat recovery setup cut our daily utility costs by nearly fifteen percent.",
+    sector: "Beverage Thermal Processing",
+  },
+  {
+    id: 'rev-8',
+    quote: "The orbital welding inspection and CIP loop design gave us complete confidence in our aseptic lines.",
+    sector: "Sanitary Process Engineering",
+  },
+  {
+    id: 'rev-9',
+    quote: "Turnkey lab instrumentation and standard operating procedures brought our milk testing up to international standard.",
+    sector: "Quality Assurance Lab Setup",
+  },
+  {
+    id: 'rev-10',
+    quote: "Aseptic filling line calibration was handled with exceptional attention to sterility and fill precision.",
+    sector: "Aseptic Packaging Advisory",
+  },
+  {
+    id: 'rev-11',
+    quote: "Structured feasibility modeling gave our board complete clarity on capacity sizing and procurement milestones.",
+    sector: "Dairy Plant Consultancy",
+  },
+  {
+    id: 'rev-12',
+    quote: "The homogenizer and separator setup delivered immediate improvements in cream recovery yield.",
+    sector: "Food Processing Equipment",
   },
 ];

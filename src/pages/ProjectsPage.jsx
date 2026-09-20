@@ -130,10 +130,10 @@ export function ProjectsPage() {
             Ready to Plan or Execute Your Dairy Processing Project?
           </h2>
           <p className="text-sm text-slate-300 max-w-xl">
-            Leverage Dr. Munib Siddiqui's 25+ years of hands-on plant architecture and independent procurement stewardship.
+            Leverage Dr. Asif Iftikhar's 25+ years of hands-on plant architecture and independent procurement stewardship.
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
-            <WhatsAppButton size="md" message="Hello Dr. Munib, I would like to consult on a new dairy project.">
+            <WhatsAppButton size="md" message="Hello Dr. Asif Iftikhar / AM Tradings Team, I would like to consult on a new dairy project.">
               Consult on WhatsApp
             </WhatsAppButton>
             <Link

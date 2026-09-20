@@ -62,25 +62,54 @@ export const company = {
     "Sanitary Storage Silos & Insulated Process Tanks"
   ],
 
-  // Key People (Names & Verified Roles Only)
+  // Key People & Division Leadership (Technical Advisory, Engineering & Management)
   people: [
     {
+      department: "Technical Advisory and Industry Insights",
+      name: "Dr. Asif Iftikhar",
+      title: "Principal Dairy Consultant and CEO of the firm",
+      scope: "Turnkey Dairy Engineering, Recipe Formulation Chemistry & Executive Leadership",
+      badge: "CEO & Advisory"
+    },
+    {
+      department: "Engineering Division",
+      name: "Engr. M. Essa Siddiqui",
+      title: "Technical Director",
+      scope: "Site Planning, Electrical and Automation",
+      badge: "Engineering Division"
+    },
+    {
+      department: "Management Division",
       name: "Dr. Munib Siddiqui",
-      title: "Principal Dairy Consultant & Technical Director",
-      department: "Technical Advisory & Engineering"
+      title: "Business Feasibility & Strategy",
+      scope: "Business Feasibility and Viability Advisory, Market Potential and Sales Strategy Development",
+      badge: "Management Division"
     }
   ],
 
+  // Wellness Initiative (Nutrew)
+  wellnessInitiative: {
+    name: "Nutrew",
+    headline: "AM Wellness Initiative",
+    title: "Nutrew — Pure Wellness & Nutrition",
+    description: "Nutrew is an innovative wellness and nutrition startup funded and initiated by AM Tradings, dedicated to high-standard healthy living and scientific food formulations.",
+    url: "https://nutrew.com",
+    tag: "AM Tradings Wellness Venture",
+  },
+
   // Contact Information
   contacts: {
-    whatsapp: "+92 345 4491979",
-    whatsappRaw: "923454491979",
-    phoneSecondary: "+92 321 4491979",
+    phone: "03019399097",
+    phoneDisplay: "03019399097",
+    whatsapp: "03019399097",
+    whatsappFormatted: "+92 301 9399097",
+    whatsappRaw: "923019399097",
+    phoneSecondary: "03019399097",
     emailPrimary: "amtradings100@gmail.com",
-    emailSecondary: "siddiquimunib@gmail.com",
+    emailSecondary: "info@amtradings.com",
     consultant: {
-      name: "Dr. Munib Siddiqui",
-      title: "Principal Dairy Consultant & Technical Advisor",
+      name: "Dr. Asif Iftikhar",
+      title: "Principal Dairy Consultant and CEO of the firm",
       experience: "25+ Years in Food & Dairy Industrialization",
       bio: "Veteran dairy technologist and industrial consultant spearheading turnkey dairy processing facilities, aseptic packaging projects, recipe formulation, and high-efficiency machinery procurement across Pakistan and international markets.",
       qualifications: "Doctorate in Food Science & Dairy Technology, Senior Industrial Advisor"
@@ -185,7 +214,7 @@ export const company = {
       number: "04",
       title: "Recipe Formulation & Dairy R&D",
       summary: "Scientific product engineering for UHT milk, pasteurized milk, cheese, butter, yogurt, and dairy desserts.",
-      description: "Led by Dr. Munib Siddiqui, our laboratory R&D develops proprietary formulas, stabilizes shelf life, enhances mouthfeel, and optimizes solids-not-fat (SNF) and fat ratios for superior profitability.",
+      description: "Led by Dr. Asif Iftikhar, our laboratory R&D develops proprietary formulas, stabilizes shelf life, enhances mouthfeel, and optimizes solids-not-fat (SNF) and fat ratios for superior profitability.",
       deliverables: [
         "UHT, ESL (Extended Shelf Life), and pasteurized milk formulations",
         "Mozzarella, Cheddar, and processed cheese standardized recipes",
@@ -406,7 +435,7 @@ export const company = {
     },
     {
       q: "Can you assist with recipe engineering and Punjab Food Authority (PFA) compliance?",
-      a: "Yes. Led by Dr. Munib Siddiqui, we provide complete product formulation, lab QA setup, nutritional profiling, and regulatory compliance consulting to meet PFA, PSQCA, and international ISO 22000 / HACCP food safety standards."
+      a: "Yes. Led by Dr. Asif Iftikhar, we provide complete product formulation, lab QA setup, nutritional profiling, and regulatory compliance consulting to meet PFA, PSQCA, and international ISO 22000 / HACCP food safety standards."
     },
     {
       q: "How does AM Tradings save CAPEX on machinery purchases?",
@@ -422,7 +451,7 @@ export const company = {
  */
 export function getWhatsAppUrl(message = "") {
   const cleanNumber = company.contacts.whatsappRaw;
-  const defaultMessage = `Hello Dr. Munib Siddiqui / AM Tradings, I would like to inquire about your Dairy Plant Consulting and Machinery Sourcing services.`;
+  const defaultMessage = `Hello Dr. Asif Iftikhar / AM Tradings Team, I would like to inquire about your Dairy Plant Consulting and Machinery Sourcing services.`;
   const encodedText = encodeURIComponent(message.trim() || defaultMessage);
   return `https://wa.me/${cleanNumber}?text=${encodedText}`;
 }

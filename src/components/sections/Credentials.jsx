@@ -24,7 +24,7 @@ export function Credentials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Leadership &amp; Technical Authority"
-          title="Principal Dairy Consultant: Dr. Munib Siddiqui"
+          title="Principal Dairy Consultant: Dr. Asif Iftikhar"
           subtitle="Direct advisory access to seasoned industrial expertise in turnkey plant engineering, recipe chemistry, and overseas procurement."
         />
 
@@ -36,7 +36,7 @@ export function Credentials() {
             <div className="lg:col-span-4 flex flex-col items-center text-center pb-8 lg:pb-0 lg:border-r border-slate-100">
               <div className="relative mb-6">
                 <div className="w-36 h-36 sm:w-44 sm:h-44 rounded-full bg-gradient-to-br from-petrol-900 via-petrol-800 to-petrol-950 border-4 border-gold-500/80 shadow-2xl flex items-center justify-center text-gold-400 font-serif text-5xl font-bold">
-                  MS
+                  AI
                 </div>
                 <div className="absolute bottom-1 right-2 bg-gold-500 text-petrol-950 p-2 rounded-full shadow-lg">
                   <Award className="w-5 h-5" />
@@ -98,9 +98,9 @@ export function Credentials() {
                 <WhatsAppButton
                   variant="whatsapp"
                   size="md"
-                  message="Hello Dr. Munib, I would like to schedule a private advisory discussion regarding our dairy project."
+                  message="Hello Dr. Asif Iftikhar / AM Tradings Team, I would like to schedule a private advisory discussion regarding our dairy project."
                 >
-                  Message Dr. Munib Directly
+                  Message Dr. Asif Directly
                 </WhatsAppButton>
               </div>
             </div>

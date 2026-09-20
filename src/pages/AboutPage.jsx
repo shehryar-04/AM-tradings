@@ -76,7 +76,7 @@ export function AboutPage() {
                   Our practice operates on an unshakeable fiduciary rule: <em>"We do not make the machines. We decide which one you should buy."</em> Because we are independent technical consultants rather than quota-driven equipment sales agents, our sole obligation is the investor's balance sheet, plant longevity, and product quality.
                 </p>
                 <p>
-                  Headed by <strong>Dr. Munib Siddiqui</strong> (Doctorate in Food Science &amp; Dairy Technology, 25+ years industry experience), AM Tradings bridges high-level process engineering with hands-on mechanical erection, sanitary stainless steel welding supervision, recipe formulation, and regulatory compliance.
+                  Headed by <strong>Dr. Asif Iftikhar</strong> (Doctorate in Food Science &amp; Dairy Technology, 25+ years industry experience), AM Tradings bridges high-level process engineering with hands-on mechanical erection, sanitary stainless steel welding supervision, recipe formulation, and regulatory compliance.
                 </p>
               </div>
 
@@ -115,15 +115,15 @@ export function AboutPage() {
                 <div className="p-5 bg-petrol-900 text-xs text-slate-300 flex flex-col gap-3">
                   <div className="flex items-center justify-between border-b border-white/10 pb-2">
                     <span className="font-mono text-gold-400">Head of Advisory</span>
-                    <span className="text-white font-semibold">Dr. Munib Siddiqui</span>
+                    <span className="text-white font-semibold">Dr. Asif Iftikhar</span>
                   </div>
                   <div className="flex items-center justify-between border-b border-white/10 pb-2">
                     <span className="font-mono text-gold-400">Statutory Status</span>
                     <span className="text-white font-semibold">SECP Registered / LCCI Member</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-gold-400">International MOUs</span>
-                    <span className="text-white font-semibold">STK &amp; South Korea Tech</span>
+                    <span className="font-mono text-gold-400">Wellness Initiative</span>
+                    <span className="text-white font-semibold">Nutrew Startup</span>
                   </div>
                 </div>
               </div>
@@ -245,72 +245,59 @@ export function AboutPage() {
         </div>
       </section>
 
-      {/* 4. KEY PEOPLE (NAMES & ROLES ONLY) */}
+      {/* 4. TEAM & ADVISORY SECTION */}
       <section className="py-20 bg-ivory-200 border-b border-petrol-900/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Institutional Leadership"
-            title="People &amp; Technical Governance"
-            subtitle="Verified key personnel and consulting leadership responsible for technical advisory and client engagements."
+            title="Team &amp; Advisory Directorate"
+            subtitle="Principal consulting leadership, engineering directors, and commercial strategists driving turnkey excellence."
             align="center"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 max-w-6xl mx-auto">
             {company.people.map((person, idx) => (
               <div
                 key={idx}
-                className="p-6 bg-white border border-petrol-900/10 rounded-sm shadow-sm flex flex-col justify-between"
+                className="p-6 sm:p-8 bg-white border border-petrol-900/10 rounded-sm shadow-sm flex flex-col justify-between hover:shadow-md hover:border-gold-500/40 transition-all duration-300"
               >
                 <div>
-                  <div className="w-10 h-10 rounded-xs bg-petrol-900 text-gold-400 flex items-center justify-center mb-4">
-                    <Users className="w-5 h-5" />
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="w-10 h-10 rounded-xs bg-petrol-900 text-gold-400 flex items-center justify-center">
+                      <Users className="w-5 h-5" />
+                    </div>
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-gold-500/10 text-gold-800 border border-gold-500/20">
+                      {person.badge || "Verified Lead"}
+                    </span>
                   </div>
-                  <span className="text-[10px] font-mono text-gold-700 uppercase tracking-widest block mb-1">
+
+                  <span className="text-[11px] font-mono text-gold-700 uppercase tracking-wider font-bold block mb-1.5">
                     {person.department}
                   </span>
-                  <h3 className="text-lg font-display font-bold text-petrol-900 mb-1">
+
+                  <h3 className="text-xl font-display font-bold text-petrol-900 mb-1">
                     {person.name}
                   </h3>
-                  <p className="text-xs text-slate-600 font-mono font-medium">
+
+                  <p className="text-xs text-petrol-900 font-mono font-bold mb-3">
                     {person.title}
                   </p>
+
+                  <p className="text-xs text-slate-600 leading-relaxed pt-3 border-t border-slate-100">
+                    {person.scope}
+                  </p>
                 </div>
-                <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+
+                <div className="pt-4 mt-6 border-t border-slate-100 flex items-center justify-between">
                   <span className="text-[10px] font-mono text-slate-400 uppercase">
-                    Verified Lead
+                    Division
                   </span>
                   <span className="text-[10px] font-mono text-petrol-900 font-bold">
-                    AM Tradings Advisory
+                    AM Tradings &amp; Consultants
                   </span>
                 </div>
               </div>
             ))}
-
-            {/* Institutional Associate Board */}
-            <div className="p-6 bg-petrol-900 text-white rounded-sm shadow-sm flex flex-col justify-between">
-              <div>
-                <div className="w-10 h-10 rounded-xs bg-gold-500 text-petrol-950 flex items-center justify-center mb-4">
-                  <Building2 className="w-5 h-5" />
-                </div>
-                <span className="text-[10px] font-mono text-gold-400 uppercase tracking-widest block mb-1">
-                  Engineering Directorate
-                </span>
-                <h3 className="text-lg font-display font-bold text-white mb-1">
-                  Technical Engineering Pool
-                </h3>
-                <p className="text-xs text-slate-300 font-mono font-medium">
-                  Mechanical, Civil &amp; Automation Associates
-                </p>
-              </div>
-              <div className="pt-4 mt-4 border-t border-white/10 flex items-center justify-between">
-                <span className="text-[10px] font-mono text-gold-400 uppercase">
-                  Project Execution
-                </span>
-                <span className="text-[10px] font-mono text-white font-bold">
-                  On-Site Engineering
-                </span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -322,10 +309,10 @@ export function AboutPage() {
             Need Expert Technical Advisory for Your Dairy Processing Venture?
           </h2>
           <p className="text-sm text-slate-300 max-w-xl">
-            Engage with Dr. Munib Siddiqui directly to discuss plant architecture, machinery tenders, or recipe optimization.
+            Engage with Dr. Asif Iftikhar and the AM Tradings team directly to discuss plant architecture, machinery tenders, or recipe optimization.
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
-            <WhatsAppButton size="md" message="Hello Dr. Munib, I read your company profile and would like to schedule a consultation.">
+            <WhatsAppButton size="md" message="Hello Dr. Asif Iftikhar / AM Tradings Team, I read your company profile and would like to schedule a consultation.">
               Connect on WhatsApp
             </WhatsAppButton>
             <Link

@@ -1,6 +1,6 @@
 /**
- * AM TRADINGS & CONSULTANTS — REGISTRATION & AFFILIATIONS DATA
- * Official legal credentials, chambers of commerce, tax authority registrations, and international MOUs.
+ * AM TRADINGS & CONSULTANTS — REGISTRATION & STATUTORY AFFILIATIONS DATA
+ * Official legal credentials, chambers of commerce, and tax authority registrations.
  */
 
 export const certificates = [
@@ -66,38 +66,6 @@ export const certificates = [
       'Registered for General Sales Tax on Commercial Procurement',
       'Full Compliance for Duty Exemption & Plant Machinery Imports',
       'Standardized Commercial Invoicing & Verification',
-    ],
-  },
-  {
-    id: 'mou-stk',
-    title: 'Memorandum of Understanding (MOU) — STK Machinery',
-    authority: 'STK Machinery International Co.',
-    type: 'Exclusive / Authorized Technology Representation',
-    identifier: 'Strategic Machinery Partner',
-    description: 'Bilateral technology and equipment distribution MOU empowering AM Tradings to represent, source, and commission high-grade STK dairy processing lines, UHT plants, and cheese equipment.',
-    verified: true,
-    previewImage: '/images/machinery/uht-sterilizer-line.jpg',
-    badge: 'Strategic OEM Alliance',
-    details: [
-      'Direct Factory Access to STK Sanitary Dairy Equipment',
-      'Preferred Factory Pricing & Direct Engineering Support',
-      'Warranty Backing & Fast-Track Spare Parts Dispatch',
-    ],
-  },
-  {
-    id: 'mou-korea',
-    title: 'Memorandum of Understanding (MOU) — Korean Tech Alliance',
-    authority: 'Korean Dairy Engineering & Industrial Technology Partners',
-    type: 'International Tech Collaboration',
-    identifier: 'Advanced Engineering Partner',
-    description: 'Cross-border cooperation agreement for automated process control, PLC/SCADA integration, high-hygiene aseptic packaging, and advanced dairy research collaboration.',
-    verified: true,
-    previewImage: '/images/greenfield-8-stages.jpeg',
-    badge: 'International Tech Partner',
-    details: [
-      'Technology Transfer for Advanced Aseptic Automation',
-      'Joint Research in Extended Shelf Life (ESL) Dairy Formulations',
-      'Specialized Sensor & Laboratory Instrumentation Sourcing',
     ],
   },
 ];

@@ -62,7 +62,7 @@ export function Hero() {
                 <WhatsAppButton
                   size="lg"
                   variant="whatsapp"
-                  message="Hello Dr. Munib, I would like to schedule an introductory consulting meeting for our dairy processing venture."
+                  message="Hello Dr. Asif Iftikhar / AM Tradings Team, I would like to schedule an introductory consulting meeting for our dairy processing venture."
                   pulse={true}
                 >
                   Consult on WhatsApp
@@ -129,7 +129,7 @@ export function Hero() {
                   <div className="mt-3 p-3.5 rounded-sm bg-petrol-900/95 border border-white/10 text-white">
                     <div className="flex items-center justify-between mb-1">
                       <span className="text-[11px] font-mono font-bold uppercase tracking-widest text-gold-400">
-                        Dr. Munib Siddiqui
+                        Dr. Asif Iftikhar
                       </span>
                       <span className="text-[10px] text-emerald-400 font-mono flex items-center gap-1">
                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />

@@ -130,7 +130,7 @@ export function VideoModal({
                   <WhatsAppButton
                     size="sm"
                     variant="whatsapp"
-                    message={`Hello Dr. Munib, I watched the video showcase for "${video.title}" and would like to inquire about this machinery/system.`}
+                    message={`Hello Dr. Asif Iftikhar / AM Tradings Team, I watched the video showcase for "${video.title}" and would like to inquire about this machinery/system.`}
                   >
                     Inquire on this System
                   </WhatsAppButton>

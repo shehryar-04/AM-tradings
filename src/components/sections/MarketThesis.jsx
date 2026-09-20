@@ -82,7 +82,7 @@ export function MarketThesis() {
                 <WhatsAppButton
                   variant="gold"
                   size="md"
-                  message="Hello Dr. Munib, I want to discuss a dairy processing market feasibility study for our investment group."
+                  message="Hello Dr. Asif Iftikhar / AM Tradings Team, I want to discuss a dairy processing market feasibility study for our investment group."
                 >
                   Discuss Feasibility Study
                 </WhatsAppButton>

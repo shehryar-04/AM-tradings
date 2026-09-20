@@ -79,11 +79,11 @@ export function Header() {
             <WhatsAppButton
               size="sm"
               variant="whatsapp"
-              message="Hello Dr. Munib, I would like to arrange an initial consulting consultation for our dairy project."
+              message="Hello Dr. Asif Iftikhar / AM Tradings Team, I would like to arrange an initial consultation for our dairy project."
               showArrow={false}
               pulse={true}
             >
-              Consult Dr. Munib
+              Consult Dr. Asif
             </WhatsAppButton>
           </div>
 
@@ -92,7 +92,7 @@ export function Header() {
             <WhatsAppButton
               size="sm"
               variant="whatsapp"
-              message="Hello Dr. Munib, I would like to inquire about AM Tradings services."
+              message="Hello Dr. Asif Iftikhar / AM Tradings Team, I would like to inquire about AM Tradings services."
               showArrow={false}
               className="sm:hidden text-xs py-1.5 px-2.5"
             >
@@ -146,7 +146,7 @@ export function Header() {
               <div className="flex flex-col gap-3 pt-2">
                 <WhatsAppButton
                   size="md"
-                  message="Hello Dr. Munib, I am reaching out through the AM Tradings mobile website."
+                  message="Hello Dr. Asif Iftikhar / AM Tradings Team, I am reaching out through the AM Tradings mobile website."
                   className="w-full justify-center"
                 >
                   WhatsApp: {company.contacts.whatsapp}

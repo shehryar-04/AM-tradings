@@ -25,7 +25,7 @@ export function ContactCTA() {
   const [customNotes, setCustomNotes] = useState('');
 
   // Live generated WhatsApp message tailored to user selections
-  const generatedMessage = `Hello Dr. Munib Siddiqui / AM Tradings,
+  const generatedMessage = `Hello Dr. Asif Iftikhar / AM Tradings Team,
 I would like to initiate an advisory consultation for our dairy project.
 
 • Project Type: ${projectType}
@@ -49,7 +49,7 @@ Please let me know when we can arrange an introductory consultation.`;
         <SectionHeading
           eyebrow="Initiate Project Advisory"
           title="Direct Consultation &amp; Inquiry Builder"
-          subtitle="Configure your project parameters below to generate a tailored consulting dispatch directly to Dr. Munib Siddiqui on WhatsApp."
+          subtitle="Configure your project parameters below to generate a tailored consulting dispatch directly to Dr. Asif Iftikhar on WhatsApp."
           theme="dark"
         />
 
@@ -200,7 +200,7 @@ Please let me know when we can arrange an introductory consultation.`;
                 </a>
 
                 <p className="text-[11px] text-center text-slate-400 font-mono">
-                  Direct dispatch to Dr. Munib Siddiqui: <strong className="text-slate-200">{company.contacts.whatsapp}</strong>
+                  Direct dispatch to Dr. Asif Iftikhar: <strong className="text-slate-200">{company.contacts.whatsapp}</strong>
                 </p>
               </div>
             </div>
@@ -223,7 +223,7 @@ Please let me know when we can arrange an introductory consultation.`;
               </p>
             </div>
             <a
-              href={getWhatsAppUrl("Hello Dr. Munib, I am reaching out from your website.")}
+              href={getWhatsAppUrl("Hello Dr. Asif Iftikhar / AM Tradings Team, I am reaching out from your website.")}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-xs font-mono font-bold text-[#25D366] hover:underline"
