@@ -152,7 +152,7 @@ export function ServicesPage() {
       <section className="py-20 bg-white border-b border-petrol-900/10" id="consultancy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            badge="Engineering Advisory"
+            badge="Dairy Advisory"
             title="Professional Consultancy Services"
             subtitle="Corporate, inquiry-based advisory services covering the entire industrial dairy project lifecycle. (Custom scoped per project requirements)."
             align="center"
@@ -253,8 +253,8 @@ export function ServicesPage() {
                   type="button"
                   onClick={() => setActiveCategory(cat.id)}
                   className={`relative px-4 py-2 text-xs font-mono font-bold uppercase tracking-wider rounded-xs transition-colors ${isActive
-                      ? 'text-gold-400'
-                      : 'text-slate-600 hover:text-petrol-900 bg-white border border-petrol-900/10 hover:border-gold-500/40'
+                    ? 'text-gold-400'
+                    : 'text-slate-600 hover:text-petrol-900 bg-white border border-petrol-900/10 hover:border-gold-500/40'
                     }`}
                 >
                   {isActive && (

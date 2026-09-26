@@ -39,6 +39,7 @@ import { WellnessInitiative } from '../components/sections/WellnessInitiative';
 
 export function HomePage() {
   const [selectedVideo, setSelectedVideo] = useState(null);
+  const [modalInitialTab, setModalInitialTab] = useState('specs');
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Rotating Hero Statements
@@ -58,7 +59,7 @@ export function HomePage() {
     {
       badge: 'Formulation & Technology R&D',
       title: 'Recipe Engineering, Shelf Life & QA Lab Compliance',
-      subtitle: 'Proprietary product formulations, Punjab Food Authority (PFA) validation, and plant SOPs.',
+      subtitle: 'Proprietary product formulations and plant SOPs.',
       tag: 'High-Yield Chemistry',
     },
     {
@@ -177,7 +178,10 @@ export function HomePage() {
 
                 <button
                   type="button"
-                  onClick={() => setSelectedVideo(showcaseVideos[0])}
+                  onClick={() => {
+                    setModalInitialTab('video');
+                    setSelectedVideo(showcaseVideos[0]);
+                  }}
                   className="inline-flex items-center justify-center gap-2.5 px-5 py-3.5 bg-white/10 hover:bg-white/20 text-white text-xs font-mono font-bold uppercase tracking-wider rounded-xs border border-white/15 backdrop-blur-sm transition-all"
                 >
                   <Play className="w-4 h-4 text-gold-400 fill-current" />
@@ -193,7 +197,7 @@ export function HomePage() {
                 </div>
                 <div className="p-3 bg-white/[0.04] border border-white/10 backdrop-blur-md rounded-xs hover:border-gold-500/40 transition-colors">
                   <div className="text-xs font-mono font-bold text-gold-400">STK Partner</div>
-                  <div className="text-[11px] text-slate-300">  Equipment</div>
+                  <div className="text-[11px] text-slate-300">  Dairy Machinery</div>
                 </div>
                 <div className="hidden sm:block p-3 bg-white/[0.04] border border-white/10 backdrop-blur-md rounded-xs hover:border-gold-500/40 transition-colors">
                   <div className="text-xs font-mono font-bold text-gold-400">Vendor Neutral</div>
@@ -229,7 +233,10 @@ export function HomePage() {
                   </div>
                   <button
                     type="button"
-                    onClick={() => setSelectedVideo(showcaseVideos[0])}
+                    onClick={() => {
+                      setModalInitialTab('specs');
+                      setSelectedVideo(showcaseVideos[0]);
+                    }}
                     className="text-gold-400 hover:text-gold-300 font-mono font-bold uppercase tracking-wider flex items-center gap-1 transition-colors px-2.5 py-1.5 rounded-xs bg-white/5 hover:bg-white/10 border border-white/10"
                   >
                     <span>Full Specs</span>
@@ -461,16 +468,20 @@ export function HomePage() {
           <SectionHeading
             badge="Industrial Showcase"
             title="Plant Operations &amp; Machinery"
-            subtitle="Operational overview of cheese processing lines, high-pressure homogenizers, and Clean-In-Place automation."
+            subtitle="Operational overview of HTST plate pasteurizers, high-pressure homogenizers, centrifugal cream separators, enclosed cheese lines, vacuum evaporators, and automated Clean-In-Place systems."
             variant="dark"
             align="center"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mt-10">
             {secondaryVideos.map((vid) => (
               <VideoCard
                 key={vid.id}
                 video={vid}
+                onSelect={(selected) => {
+                  setModalInitialTab('specs');
+                  setSelectedVideo(selected);
+                }}
               />
             ))}
           </div>
@@ -533,11 +544,12 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* Video Modal Player */}
+      {/* Video & Full STK Specs Modal Player */}
       <VideoModal
         video={selectedVideo}
         isOpen={!!selectedVideo}
         onClose={() => setSelectedVideo(null)}
+        initialTab={modalInitialTab}
       />
     </div>
   );

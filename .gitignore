@@ -34,3 +34,4 @@ lerna-debug.log*
 # Root image extracts (curated assets reside in public/images/)
 /img*.jpg
 
+*.png

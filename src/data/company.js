@@ -189,8 +189,7 @@ export const company = {
       deliverables: [
         "Vendor pre-qualification and technical tender audits",
         "Direct manufacturer pricing negotiation & CAPEX reduction",
-        "Hygienic standards verification (3A / EHEDG compliance)",
-        "Logistics, customs clearance, and port handling advisory"
+        "Hygienic standards verification (3A / EHEDG compliance)"
       ]
     },
     {
