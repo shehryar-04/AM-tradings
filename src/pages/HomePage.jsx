@@ -25,7 +25,7 @@ import {
 } from 'lucide-react';
 import { company, getWhatsAppUrl } from '../data/company';
 import { certificates } from '../data/certificates';
-import { showcaseVideos } from '../data/videos';
+import { showcaseVideos, heroVideo, watchPlantVideo } from '../data/videos';
 import { testimonials } from '../data/testimonials';
 import { projects } from '../data/projects';
 import { CertificateCard } from '../components/ui/CertificateCard';
@@ -180,7 +180,7 @@ export function HomePage() {
                   type="button"
                   onClick={() => {
                     setModalInitialTab('video');
-                    setSelectedVideo(showcaseVideos[0]);
+                    setSelectedVideo(watchPlantVideo);
                   }}
                   className="inline-flex items-center justify-center gap-2.5 px-5 py-3.5 bg-white/10 hover:bg-white/20 text-white text-xs font-mono font-bold uppercase tracking-wider rounded-xs border border-white/15 backdrop-blur-sm transition-all"
                 >
@@ -213,7 +213,7 @@ export function HomePage() {
                 {/* Embedded YouTube Video */}
                 <div className="relative aspect-[16/10] sm:aspect-[16/9] w-full bg-black overflow-hidden rounded-xs">
                   <iframe
-                    src="https://www.youtube.com/embed/pDseoVMag3Q?rel=0&modestbranding=1"
+                    src={heroVideo.videoUrl}
                     title="AM Tradings Turnkey Dairy Processing &amp; Machinery"
                     className="w-full h-full border-0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -235,7 +235,7 @@ export function HomePage() {
                     type="button"
                     onClick={() => {
                       setModalInitialTab('specs');
-                      setSelectedVideo(showcaseVideos[0]);
+                      setSelectedVideo(heroVideo);
                     }}
                     className="text-gold-400 hover:text-gold-300 font-mono font-bold uppercase tracking-wider flex items-center gap-1 transition-colors px-2.5 py-1.5 rounded-xs bg-white/5 hover:bg-white/10 border border-white/10"
                   >

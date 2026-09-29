@@ -7,23 +7,52 @@
  * multi-effect evaporators, and Clean-In-Place automation.
  */
 
+/**
+ * Hero Section In-Place Preview Video
+ * Embedded directly in the hero section card on the homepage.
+ */
+export const heroVideo = {
+  id: 'hero-comprehensive-plant',
+  title: 'Turnkey Dairy Processing Facility & Processing Hall',
+  category: 'Full Plant Overview',
+  duration: '03:45',
+  thumbnail: '/images/plant-consulting-dark.jpeg',
+  videoUrl: 'https://www.youtube.com/embed/pDseoVMag3Q?rel=0&modestbranding=1',
+  youtubeId: 'pDseoVMag3Q',
+  description: 'Comprehensive operational footage of an automated turnkey dairy processing plant, featuring raw milk intake, HTST pasteurization, high-pressure homogenization, and automated storage silos in full commercial throughput.',
+  highlights: [
+    'Multi-stage thermal processing hall in active operation',
+    'Automated mix-proof valve manifold matrix in live switching sequence',
+    'SCADA centralized control room monitoring pressure, flow, and temperature',
+  ],
+  featuredInHero: true,
+};
+
+/**
+ * Plant Walkthrough Video
+ * Displayed when user clicks the "Watch Plant Video" button.
+ * YouTube source: https://youtu.be/1r1MJrYiX3w
+ */
+export const watchPlantVideo = {
+  id: 'stk-dairy-plant-processing-line',
+  title: 'STK MAKİNA Complete Dairy Plant General View Video From The Processing Line',
+  category: 'Complete Processing Line Tour',
+  duration: '01:14',
+  thumbnail: 'https://i.ytimg.com/vi/1r1MJrYiX3w/maxresdefault.jpg',
+  videoUrl: 'https://www.youtube.com/embed/1r1MJrYiX3w?rel=0&modestbranding=1&autoplay=1',
+  youtubeId: '1r1MJrYiX3w',
+  description: 'STK MAKİNA Complete Dairy Plant General View Video From The Processing Line. Live operational walkthrough of turnkey dairy processing, liquid milk processing lines, hygienic piping, and industrial dairy automation.',
+  highlights: [
+    'Complete STK Makina turnkey dairy processing plant general view',
+    'Live operational walkthrough directly from the active processing line',
+    'Sanitary stainless steel piping, storage silos, and pasteurization automation',
+  ],
+  featuredInHero: true,
+};
+
 export const showcaseVideos = [
-  {
-    id: 'hero-comprehensive-plant',
-    title: 'Turnkey Dairy Processing Facility & Processing Hall',
-    category: 'Full Plant Overview',
-    duration: '03:45',
-    thumbnail: '/images/plant-consulting-dark.jpeg',
-    videoUrl: 'https://www.youtube.com/embed/pDseoVMag3Q?rel=0&modestbranding=1',
-    youtubeId: 'pDseoVMag3Q',
-    description: 'Comprehensive operational footage of an automated turnkey dairy processing plant, featuring raw milk intake, HTST pasteurization, high-pressure homogenization, and automated storage silos in full commercial throughput.',
-    highlights: [
-      'Multi-stage thermal processing hall in active operation',
-      'Automated mix-proof valve manifold matrix in live switching sequence',
-      'SCADA centralized control room monitoring pressure, flow, and temperature',
-    ],
-    featuredInHero: true,
-  },
+  heroVideo,
+  watchPlantVideo,
   {
     id: 'pasteurizer-showcase',
     title: 'High-Efficiency HTST Plate Pasteurizer Plant',

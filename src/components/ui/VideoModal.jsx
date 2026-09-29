@@ -31,6 +31,7 @@ import {
   stkCatalogueUnits
 } from '../../data/stkBrochureData';
 import { company } from '../../data/company';
+import { watchPlantVideo } from '../../data/videos';
 
 export function VideoModal({
   video,
@@ -42,6 +43,8 @@ export function VideoModal({
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedItem, setSelectedItem] = useState(null);
+
+  const currentVideo = (video && video.videoUrl) ? video : watchPlantVideo;
 
   // Sync activeTab with initialTab when modal opens
   useEffect(() => {
@@ -582,30 +585,30 @@ export function VideoModal({
             <div className="flex-1 overflow-y-auto flex flex-col bg-petrol-900">
               {/* Video Player Display Area */}
               <div className="relative aspect-video bg-black flex items-center justify-center overflow-hidden">
-                {video?.videoUrl?.includes('youtube.com') ||
-                video?.videoUrl?.includes('youtu.be') ? (
+                {currentVideo?.videoUrl?.includes('youtube.com') ||
+                currentVideo?.videoUrl?.includes('youtu.be') ? (
                   <iframe
-                    src={video.videoUrl}
-                    title={video.title || 'Plant Video'}
+                    src={currentVideo.videoUrl}
+                    title={currentVideo.title || 'Plant Video'}
                     className="w-full h-full border-0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                   />
-                ) : video?.videoUrl ? (
+                ) : currentVideo?.videoUrl ? (
                   <video
-                    src={video.videoUrl}
+                    src={currentVideo.videoUrl}
                     controls
                     autoPlay
                     className="w-full h-full object-contain"
-                    poster={video.thumbnail}
+                    poster={currentVideo.thumbnail}
                   >
                     Your browser does not support HTML5 video playback.
                   </video>
                 ) : (
                   <div className="relative w-full h-full">
                     <img
-                      src={video?.thumbnail || '/images/plant-consulting-dark.jpeg'}
-                      alt={video?.title || 'Plant Tour'}
+                      src={currentVideo?.thumbnail || '/images/plant-consulting-dark.jpeg'}
+                      alt={currentVideo?.title || 'Plant Tour'}
                       className="w-full h-full object-cover filter brightness-75"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-petrol-950/90 via-petrol-950/40 to-transparent flex flex-col items-center justify-center p-6 text-center">
@@ -616,7 +619,7 @@ export function VideoModal({
                         Turnkey Commercial Dairy Processing Line
                       </span>
                       <h4 className="text-xl font-display font-bold text-white max-w-lg mb-2">
-                        {video?.title || 'Live Processing Hall Tour'}
+                        {currentVideo?.title || 'Live Processing Hall Tour'}
                       </h4>
                     </div>
                   </div>
@@ -632,21 +635,21 @@ export function VideoModal({
                     <span>HD Commercial Footage</span>
                   </div>
                   <h3 className="font-display text-xl sm:text-2xl font-bold text-white mb-2">
-                    {video?.title || 'Turnkey Dairy Processing Facility & Processing Hall'}
+                    {currentVideo?.title || 'Turnkey Dairy Processing Facility & Processing Hall'}
                   </h3>
                   <p className="font-sans text-sm text-slate-300 leading-relaxed max-w-3xl">
-                    {video?.description ||
+                    {currentVideo?.description ||
                       'Comprehensive operational footage of an automated turnkey dairy processing plant, featuring raw milk intake, HTST pasteurization, high-pressure homogenization, and automated storage silos in full commercial throughput.'}
                   </p>
                 </div>
 
-                {video?.highlights && (
+                {currentVideo?.highlights && (
                   <div className="bg-petrol-950/80 p-5 rounded-xs border border-white/10">
                     <span className="text-xs font-display font-bold uppercase tracking-widest text-gold-400 block mb-3">
                       Key Technical Highlights Observed in Operation
                     </span>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                      {video.highlights.map((h, i) => (
+                      {currentVideo.highlights.map((h, i) => (
                         <div key={i} className="flex items-start gap-2.5">
                           <CheckCircle2 className="w-4 h-4 text-gold-400 flex-shrink-0 mt-0.5" />
                           <span className="text-xs font-sans text-slate-200">
